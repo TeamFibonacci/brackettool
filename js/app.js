@@ -1,37 +1,45 @@
 'use strict';
 
+
 function OrganicPlayer(name, points){
   this.name = name;
   this.points = points;
 }
 
 //get player names
+var getPlayer1Name = prompt('Player 1, what is your name?');
 function player1Name(){
-  var getPlayerName = prompt('Player 1, what is your name?');
-  getPlayerName;
-  return getPlayerName;
+  getPlayer1Name;
+  return getPlayer1Name;
 }
+var getPlayer2Name = prompt('Player 2, what is your name?');
 function player2Name(){
-  var getPlayerName = prompt('Player 2, what is your name?');
-  getPlayerName;
-  return getPlayerName;
+  getPlayer2Name;
+  return getPlayer2Name;
 }
+var getPlayer3Name = prompt('Player 3, what is your name?');
 function player3Name(){
-  var getPlayerName = prompt('Player 3, what is your name?');
-  getPlayerName;
-  return getPlayerName;
+  getPlayer3Name;
+  return getPlayer3Name;
 }
+var getPlayer4Name = prompt('Player 4, what is your name?');
 function player4Name(){
-  var getPlayerName = prompt('Player 4, what is your name?');
-  getPlayerName;
-  return getPlayerName;
+  getPlayer4Name;
+  return getPlayer4Name;
 }
 
+var player1;
+var player2;
+var player3;
+var player4;
+
 //player names in vars for later use
-var player1 = player1Name();
-var player2 = player2Name();
-var player3 = player3Name();
-var player4 = player4Name();
+
+player1 = player1Name();
+player2 = player2Name();
+player3 = player3Name();
+player4 = player4Name();
+
 //adding first set of organic players to document
 function organicPlayers1(){
   var table = document.getElementById('players1');
@@ -155,9 +163,6 @@ cpuPlayers();
 // cpuPlayersMatch2();
 
 
-
-//-----reserved for counter.html-------------------------------
-
 //button to match 1
 var counter1 = function(){
   window.location.href = 'counter.html';
@@ -177,11 +182,4 @@ var youWin = function(){
 var winClick = document.getElementById('winButton');
 winClick.addEventListener('click', youWin);
 
-// var match1Player = document.getElementById('playerPoints1');
-// match1Player.textContent;
-
-
-
-
-
-
+//-----reserved for counter.html-------------------------------
