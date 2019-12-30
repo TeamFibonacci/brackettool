@@ -1,8 +1,8 @@
 
 h1, h2 {
-	color: blue;
+	color: rgb(236, 240, 21);
 	text-align: center;
-	background-color: burlywood;
+	background-color: rgb(56, 35, 7);
 }
 
 a{
@@ -49,7 +49,6 @@ span {
 	-ms-transition: all 0.4s ease-in-out 0s;
 	transition: all 0.4s ease-in-out 0s;
 }
-
 .row:hover .text,
 .row.active .text, 
 .row1:hover .text1,
@@ -73,8 +72,55 @@ span {
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
+ button {
+	border-color: maroon;
+	size: 30px;
+	color: maroon;
+	background-color: red;
+	border: 50px;
+	padding: 5px;
+	float: right ;
+	position: relative;
+	margin: 15px;
+	width: 200px;
+	height: 45px;
+	border-radius: 12px;
+	text-shadow: mintcream;
+	text-decoration: orangered;
+	font-size: 30px;
+	font-family: 'Ceviche One', cursive;
+	display: inline;
 
+}
+.container{
+	border: 2px solid black;
+	padding: 25px;
+	background-image: url(img/colorfade.jpg);
+	background-repeat: no-repeat;
+	background-size: auto;
+	
+}
 
+/* #background{
+	border-radius: 100px;
+	border-color: maroon;
+	background-image: url(img/colorfade.jpg);
+	rotate: 90%;
+	border-width: 300px;
+ */
+/* } */
+.rotateimg90 {
+  -webkit-transform:rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+ }
+
+body{
+	background-color: blanchedalmond;
+
+}
 
 
 
