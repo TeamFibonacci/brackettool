@@ -158,6 +158,28 @@ cpuPlayers();
 
 //-----reserved for counter.html-------------------------------
 
+//button to match 1
+var counter1 = function(){
+  window.location.href = 'counter.html';
+};
+var match1Click = document.getElementById('match1');
+match1Click.addEventListener('click', counter1);
+//button to match 2
+var counter2 = function(){
+  window.location.href = 'counter2.html';
+};
+var match2Click = document.getElementById('match2');
+match2Click.addEventListener('click', counter2);
+//button to win screen
+var youWin = function(){
+  window.location.href = 'aboutus.html';
+};
+var winClick = document.getElementById('winButton');
+winClick.addEventListener('click', youWin);
+
+// var match1Player = document.getElementById('playerPoints1');
+// match1Player.textContent;
+
 
 
 
