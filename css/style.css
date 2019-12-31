@@ -99,6 +99,7 @@ span {
 
 body{
 	background-color: rgb(250, 243, 233);
+	min-width: 950px;
 }
 footer{
 	width: 500px;
@@ -147,7 +148,6 @@ background-color: rgba(7, 6, 6, 0.719); */
 	max-height: calc(100% - 5px);
 }
 
-
 #plus:hover {background-color: clear}
 
 #plus:active {
@@ -165,7 +165,7 @@ background-color: rgba(7, 6, 6, 0.719); */
   background-color: rgb(182, 3, 3);
   border: none;
   border-radius: 15px;
-  box-shadow: 0 9px rgb(58, 49, 49);
+	box-shadow: 0 9px 0 2px rgb(58, 49, 49);
 }
 
 .nav:hover {background-color: #fa0606}
@@ -176,6 +176,13 @@ background-color: rgba(7, 6, 6, 0.719); */
   transform: translateY(4px);
 }
 
-
-
-
+	.image-blurred-edge {
+    background-image: url('img/fantasyBackround.jpg');
+    width: 200px;
+    height: 200px;
+    /* you need to match the shadow color to your background or image border for the desired effect*/
+    box-shadow: 0 0 8px 8px white inset;
+}
+ #playerImg{
+	 border-image: none;
+ }
