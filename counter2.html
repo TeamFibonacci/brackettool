@@ -1,6 +1,5 @@
 <html lang="en">
 <head>
-
   <link href="https://fonts.googleapis.com/css?family=Ceviche+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -19,6 +18,8 @@
  
    <div id ="logo">
      <img src="img/logo.gif" alt="logo">
+     <!-- http://127.0.0.1:5500/img/plus.png -->
+     <!-- http://127.0.0.1:5500/img/minus.png -->
    <button id="Damage Counter" class="nav">Damage</button>
    <button id="About Us" class="nav">About Us</button>
    <button id="Stats" class="nav">Stats</button>
@@ -28,9 +29,13 @@
  </header>
  
   <div id="damageButtons">
+    <!-- https://stackoverflow.com/questions/24709915/blur-the-edges-of-an-image-or-background-image-with-css -->
+    <div class="image-blurred-edge">
+      <img src="img/fantasyBackground.jpg" id="playerImg" width="550" height="400" alt="playerImg">
+
+    </div>
     <img src="img/minus.png" id="minus" width="70px" height="70 "alt="minus">
-    
-    <img src="img/plus.png" id="plus" width="70" height="70"   alt="plus">
+    <img src="img/plus.png" id="plus" width="80" height="80"   alt="plus">
   </div>
 
   
