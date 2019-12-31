@@ -80,13 +80,12 @@ span {
 	border: 50px;
 	padding: 5px;
 	float: right ;
-	position: relative;
 	margin: 15px;
 	width: 200px;
 	height: 45px;
 	border-radius: 12px;
 	text-shadow: mintcream;
-	text-decoration: orangered;
+	text-decoration: rgb(14, 5, 2);
 	font-size: 30px;
 	font-family: 'Ceviche One', cursive;
 	display: inline;
@@ -95,37 +94,85 @@ span {
 .container{
 	border: 2px solid black;
 	padding: 25px;
-	background-image: url(img/colorfade.jpg);
-	background-repeat: no-repeat;
-	background-size: auto;
+	background-size: auto; */
 	
 }
 
-/* #background{
-	border-radius: 100px;
-	border-color: maroon;
-	background-image: url(img/colorfade.jpg);
-	rotate: 90%;
-	border-width: 300px;
- */
-/* } */
-.rotateimg90 {
-  -webkit-transform:rotate(270deg);
-  -moz-transform: rotate(270deg);
-  -ms-transform: rotate(270deg);
-  -o-transform: rotate(270deg);
-  transform: rotate(270deg);
- }
-
 body{
-	background-color: blanchedalmond;
+	background-color: rgb(250, 243, 233);
+}
+/* #damageButtons{
+	border-color: rgb(146, 175, 116);
+box-sizing: 15px;
+background-color: rgba(7, 6, 6, 0.719); */
 
+/* } */
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_animate3 */
+#minus{
+	padding: 2px 2px;
+  font-size: 2px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: clear;
+  border: none;
+  border-radius: 1px;
+	box-shadow: 0px black;
+	max-height: calc(100% - 5px);
 }
 
-footer{
-	width: 500px;
+#minus:hover {background-color: clear}
+
+#minus:active {
+  background-color: clear;
+  box-shadow: 0px clear;
+  transform: translateY(5px);
 }
 
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_animate3 */
+#plus{
+	padding: 2px 2px;
+  font-size: 2px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: clear;
+  border: none;
+  border-radius: 1px;
+	box-shadow: 0px black;
+	max-height: calc(100% - 5px);
+}
+
+
+#plus:hover {background-color: clear}
+
+#plus:active {
+  background-color:;
+  box-shadow: 0px clear;
+  transform: translateY(5px);
+}
+.nav {
+  padding: 15px 25px;
+  font-size: 30px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: rgb(0, 0, 0);
+  background-color: rgb(182, 3, 3);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px rgb(58, 49, 49);
+}
+
+.nav:hover {background-color: #fa0606}
+
+.nav:active {
+  background-color: #f8fcf7;
+  box-shadow: 0 5px rgb(49, 44, 44);
+  transform: translateY(4px);
+}
 
 
 

@@ -69,6 +69,7 @@ var two = new OrganicPlayer(player2, 40);
 var three = new OrganicPlayer(player3, 40);
 var four = new OrganicPlayer(player4, 40);
 
+
 // TODO!!  write a function to control these points
 one.points --;
 
@@ -120,6 +121,16 @@ function winRender(){
   table.appendChild(newTD);
 }
 winRender();
+
+
+localStorage.setItem('setP1', one.name);
+localStorage.setItem('setP2', two.name);
+localStorage.setItem('setP3', three.name);
+localStorage.setItem('setP4', four.name);
+
+localStorage.setItem('setWin1', playerWinMatch1A().name);
+localStorage.setItem('setWin2', playerWinMatch1B().name);
+// localStorage.setItem('setWinner'. win());
 
 
 //---cpus for stretch goal------------------------------------------
