@@ -88,23 +88,24 @@ main{
 	transform: translate(-50%, -50%);
 }
 #logo {
-	border-color: maroon;
+	/* border-color: maroon;
 	size: 30px;
 	color: maroon;
 	border: 50px;
-	padding: 55px;
-	/* float: right ; */
-	margin: 15px;
-	/* width: 200px; */
-	/* height: 45px; */
-	border-radius: 12px;
+	padding: 55px;  */
+	/* float: right ;  */
+	/* margin: 15px;  */
+	/* width: 200px; 
+	height: 45px;  */
+	/* border-radius: 12px;
 	text-shadow: mintcream;
 	text-decoration: rgb(14, 5, 2);
 	font-size: 30px;
-	font-family: 'Ceviche One', cursive;
-	display: inline;
+	font-family: 'Ceviche One', cursive; 
+	display: inline; */
 
-}
+} 
+
 .container{
 	border: 2px solid black;
 	padding: 25px;
@@ -170,8 +171,8 @@ footer{
 }
 .nav {
   padding: 15px 25px;
-  font-size: 30px;
-  text-align: center;
+  font-size: 20px;
+  /* text-align: center; */
   cursor: pointer;
   outline: none;
   color: rgb(0, 0, 0);
@@ -246,6 +247,7 @@ footer{
   height: 400px;
 	box-shadow: 0 0 8px 8px white inset;
 }
+
 .flex-container4 {
 	display: flex;
 	justify-content: space-between;
@@ -317,6 +319,7 @@ footer{
   box-shadow: 0px clear;
   transform: translateY(5px);
 }
+
 .counterButton5{
 	padding: 2px 2px;
   font-size: 2px;
@@ -398,4 +401,19 @@ footer{
 	color: gradient;
 	/* text-size-adjust: ; */
 
+
+
+/* for the trophy */
+.contain {
+  width: 5px;
+  height: 300px;
+  float: right;
+	margin-left: 500px;
+	animation: rotate 5s linear infinite;
+	/* position: relative; */
+}
+@keyframes rotate {
+  65% {
+    transform: rotateY(-160deg);
+  }
 }
