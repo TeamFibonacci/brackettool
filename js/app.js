@@ -199,6 +199,24 @@ var youWin = function(){
 };
 var winClick = document.getElementById('winButton');
 winClick.addEventListener('click', youWin);
+var aboutClick = document.getElementById('aboutUs');
+aboutClick.addEventListener('click', youWin);
+
+var graph = function(){
+  window.location.href = '#myChart';
+};
+var statsClick = document.getElementById('stats');
+statsClick.addEventListener('click', graph);
+
+var home = function(){
+  window.location.href = 'index.html';
+};
+var homeClick = document.getElementById('home');
+homeClick.addEventListener('click', home);
+
+
+
+
 
 //-----reserved for counter.html-------------------------------
 
