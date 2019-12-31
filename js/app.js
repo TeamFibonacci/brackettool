@@ -8,11 +8,11 @@ var counter1 = function(){
 var match1Click = document.getElementById('match1');
 match1Click.addEventListener('click', counter1);
 //button to match 2
-var counter2 = function(){
-  window.location.href = 'counter2.html';
-};
-var match2Click = document.getElementById('match2');
-match2Click.addEventListener('click', counter2);
+// var counter2 = function(){
+//   window.location.href = 'counter2.html';
+// };
+// var match2Click = document.getElementById('match2');
+// match2Click.addEventListener('click', counter2);
 //button to win screen
 var youWin = function(){
   window.location.href = 'aboutus.html';
@@ -104,22 +104,14 @@ var four = new OrganicPlayer(player4, 40);
 
 
 
-
-
-
 //localstorage for points------------------------
 // localStorage.setItem('setP1Points', one.points);
-var p1Minus = localStorage.getItem('setLoss');
+// var p1Minus = localStorage.getItem('setLoss');
 
-one.points = one.points - p1Minus;
+// one.points = one.points - p1Minus;
 
-one.points --;
-three.points --;
-
-
-
-
-
+// one.points --;
+// three.points --;
 
 
 //Decide who wins first upper set based on points
@@ -239,3 +231,5 @@ function renderChart(){
   });
 }
 renderChart();
+
+//--counter Js
