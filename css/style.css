@@ -145,6 +145,7 @@ background-color: rgba(7, 6, 6, 0.719); */
 	max-height: calc(100% - 5px);
 }
 
+
 #plus:hover {background-color: clear}
 
 #plus:active {
@@ -172,8 +173,6 @@ background-color: rgba(7, 6, 6, 0.719); */
   box-shadow: 0 5px rgb(49, 44, 44);
   transform: translateY(4px);
 }
-
-
 
 
 
