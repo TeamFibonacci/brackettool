@@ -111,7 +111,7 @@ background-color: rgba(7, 6, 6, 0.719); */
 
 /* } */
 /* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_animate3 */
-#minus{
+.counterButton{
 	padding: 2px 2px;
   font-size: 2px;
   text-align: center;
@@ -125,16 +125,16 @@ background-color: rgba(7, 6, 6, 0.719); */
 	max-height: calc(100% - 5px);
 }
 
-#minus:hover {background-color: clear}
+.counterButton:hover {background-color: clear}
 
-#minus:active {
+.counterButton:active {
   background-color: clear;
   box-shadow: 0px clear;
   transform: translateY(5px);
 }
 
 /* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_animate3 */
-#plus{
+.counterButton2{
 	padding: 2px 2px;
   font-size: 2px;
   text-align: center;
@@ -148,9 +148,9 @@ background-color: rgba(7, 6, 6, 0.719); */
 	max-height: calc(100% - 5px);
 }
 
-#plus:hover {background-color: clear}
+.counterButton2:hover {background-color: clear}
 
-#plus:active {
+.counterButton2:active {
   /* background-color:; */
   box-shadow: 0px clear;
   transform: translateY(5px);
@@ -193,3 +193,13 @@ background-color: rgba(7, 6, 6, 0.719); */
   height: 400px;
   box-shadow: 0 0 8px 8px white inset;
 }
+/* link for image https://images.search.yahoo.com/search/images;_ylt=Awr4zV..jQteVD0AcUhXNyoA;_ylu=X3oDMTE0cmxkb3ZrBGNvbG8DZ3ExBHBvcwMxBHZ0aWQDQTA2MjBfMQRzZWMDcGl2cw--?p=fantasy+background&fr2=piv-web&fr=mcafee#id=98&iurl=https%3A%2F%2Fwallpapercave.com%2Fwp%2FaD9ULLI.jpg&action=click */
+.flex-container2 {
+	display: flex;
+	justify-content: space-around;
+	background: url('../img/playerBackground.jpg') no-repeat center/cover;
+	width: 540px;
+  height: 400px;
+	box-shadow: 0 0 8px 8px white inset;
+}
+
