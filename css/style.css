@@ -18,7 +18,18 @@ span {
 	height: 350px;
   padding: 30px 80px;
 }
+body{
+	font-family: 'Ceviche One', cursive;
 
+}
+button{
+	font-family: 'Ceviche One', cursive;	
+
+}
+main{
+	font-family: 'Ceviche One', cursive;
+
+}
 .row,
 .row1,
 .row2 {
@@ -33,6 +44,8 @@ span {
 .text,
 .text1,
 .text2 {
+	font-family: 'Ceviche One', cursive;
+
 	opacity: 0;
 	position: absolute;
 	top: 0;
@@ -62,6 +75,8 @@ span {
 .textb1,
 .textb2{
 	text-align: center;
+	font-family: 'Ceviche One', cursive;
+
 	font-size: 20px;
 	display: inline-block;
 	position: absolute;
@@ -215,7 +230,12 @@ footer{
 }
 .container{
 	display: flex;
+	flex-direction: column;
+}
+.innerContainer{
+	display: flex;
 	justify-content: space-evenly;
+
 }
 .flex-container3 {
 	display: flex;
@@ -226,15 +246,6 @@ footer{
   height: 400px;
 	box-shadow: 0 0 8px 8px white inset;
 }
-
-/* #trophy {
-	width: 200px;
-	height: 200px;
-	transition: 0.4s ease-in-out;
-	float: right;
-}
-#trophy:hover {
-	 transform: rotate(360deg); */
 .flex-container4 {
 	display: flex;
 	justify-content: space-between;
@@ -242,6 +253,24 @@ footer{
 	background: url('../img/broken.jpg') no-repeat center/cover;
 	width: 540px;
   height: 400px;
+	box-shadow: 0 0 8px 8px white inset;
+}
+	.flex-container5 {
+		display: flex;
+		justify-content: space-between;
+		padding: 0px 12px 0px 12px;
+		background: url('../img/player3.jpg') no-repeat center/cover;
+		width: 540px;
+		height: 400px;
+		box-shadow: 0 0 8px 8px white inset;
+}
+.flex-container6 {
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 12px 0px 12px;
+	background: url('../img/destroyer.jpg') no-repeat center/cover;
+	width: 540px;
+	height: 400px;
 	box-shadow: 0 0 8px 8px white inset;
 }
 .counterButton3{
@@ -287,4 +316,86 @@ footer{
   /* background-color:; */
   box-shadow: 0px clear;
   transform: translateY(5px);
+}
+.counterButton5{
+	padding: 2px 2px;
+  font-size: 2px;
+	text-align: center;
+	margin-top: 300px;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: clear;
+  border: none;
+  border-radius: 1px;
+	box-shadow: 0px black;
+	max-height: calc(100% - 5px);
+}
+
+.counterButton5:hover {background-color: clear}
+
+.counterButton5:active {
+  /* background-color:; */
+  box-shadow: 0px clear;
+	transform: translateY(5px);
+}
+
+
+
+.counterButton6{
+	padding: 2px 2px;
+  font-size: 2px;
+	text-align: center;
+	margin-top: 300px;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: clear;
+  border: none;
+  border-radius: 1px;
+	box-shadow: 0px black;
+	max-height: calc(100% - 5px);
+}
+
+.counterButton6:hover {background-color: clear}
+
+.counterButton6:active {
+  /* background-color:; */
+  box-shadow: 0px clear;
+	transform: translateY(5px);
+}
+#pts1[type=text]{
+	background-color:clear;
+	width: 200px;
+	margin-top: 30px;
+	font-size: 200;
+	
+	/* text-size-adjust: ; */
+}
+
+#pts2[type=text]{
+	background-color:clear;
+	width: 200px;
+	margin-top: 30px;
+	font-size: 200;
+	color: gradient;
+
+}
+#pts3[type=text]{
+	background-color:clear;
+	width: 200px;
+	margin-top: 30px;
+	font-size: 200;
+	color: gradient;
+	/* text-size-adjust: ; */
+
+}
+#pts4[type=text]{
+	background-color:clear;
+	width: 200px;
+	margin-top: 30px;
+	font-size: 200;
+	color: gradient;
+	/* text-size-adjust: ; */
+
 }
