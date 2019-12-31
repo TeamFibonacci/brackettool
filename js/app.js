@@ -1,5 +1,34 @@
 'use strict';
 
+//buttons---------------------------------------------------
+//button to match 1
+var counter1 = function(){
+  window.location.href = 'counter.html';
+};
+var match1Click = document.getElementById('match1');
+match1Click.addEventListener('click', counter1);
+//button to match 2
+var counter2 = function(){
+  window.location.href = 'counter2.html';
+};
+var match2Click = document.getElementById('match2');
+match2Click.addEventListener('click', counter2);
+//button to win screen
+var youWin = function(){
+  window.location.href = 'aboutus.html';
+};
+var winClick = document.getElementById('winButton');
+winClick.addEventListener('click', youWin);
+var aboutClick = document.getElementById('aboutUs');
+aboutClick.addEventListener('click', youWin);
+//button to scroll to chart
+var graph = function(){
+  window.location.href = '#myChart';
+};
+var statsClick = document.getElementById('stats');
+statsClick.addEventListener('click', graph);
+
+
 // Add var allPlayer = []  help to push this
 var allPlayer = [];
 
@@ -71,9 +100,28 @@ var four = new OrganicPlayer(player4, 40);
 
 
 // TODO!!  write a function to control these points
-one.points --;
 
+
+
+
+
+
+
+//localstorage for points------------------------
+// localStorage.setItem('setP1Points', one.points);
+var p1Minus = localStorage.getItem('setLoss');
+
+one.points = one.points - p1Minus;
+
+one.points --;
 three.points --;
+
+
+
+
+
+
+
 //Decide who wins first upper set based on points
 function playerWinMatch1A(){
   if (one.points <= two.points){
@@ -122,112 +170,17 @@ function winRender(){
 }
 winRender();
 
-
+//localstorage for name brackets-----------------
 localStorage.setItem('setP1', one.name);
 localStorage.setItem('setP2', two.name);
 localStorage.setItem('setP3', three.name);
 localStorage.setItem('setP4', four.name);
-
 localStorage.setItem('setWin1', playerWinMatch1A().name);
 localStorage.setItem('setWin2', playerWinMatch1B().name);
 // localStorage.setItem('setWinner'. win());
 
 
-//---cpus for stretch goal------------------------------------------
-
-//cpu constructor
-
-function Player(name, points){
-  this.name = name;
-  this.points = points;
-
-}
-//new cpu players from constructor
-var matthew = new Player('matthew', 0);
-var mark = new Player('mark', 0);
-var luke = new Player('luke', 0);
-var john = new Player('john', 0);
-var mario = new Player('mario', 0);
-var luigi = new Player('luigi', 0);
-var yoshi = new Player('yoshi', 0);
-var bowser = new Player('bowser', 0);
-//declare arrays and randoms
-var cpu1Array = [matthew.name, mark.name, luke.name, john.name];
-var cpu2Array = [mario.name, luigi.name, yoshi.name, bowser.name];
-var randomize = Math.floor(Math.random() * cpu1Array.length);
-var cpuRandom = cpu1Array[randomize];
-var cpu2Random = cpu2Array[randomize];
-//puts in random layers from 2 different arrays
-function cpuPlayers(){
-  var table = document.getElementById('cpu');
-  var newTD = document.createElement('td');
-  var addText = document.createTextNode(`${cpuRandom} vs ${cpu2Random}`);
-  newTD.appendChild(addText);
-  table.appendChild(newTD);
-}
-cpuPlayers();
-
-
-//assign points to players
-
-// //working on this
-// function cpuPlayersMatch2(){
-//   var table = document.getElementById('cpu2');
-//   var newTD = document.createElement('td');
-//   var addText = document.createTextNode(`${cpuRandom} vs ${cpu2Random}`);
-//   newTD.appendChild(addText);
-//   table.appendChild(newTD);
-// }
-// cpuPlayersMatch2();
-
-
-//button to match 1
-var counter1 = function(){
-  window.location.href = 'counter.html';
-};
-var match1Click = document.getElementById('match1');
-match1Click.addEventListener('click', counter1);
-//button to match 2
-var counter2 = function(){
-  window.location.href = 'counter2.html';
-};
-var match2Click = document.getElementById('match2');
-match2Click.addEventListener('click', counter2);
-//button to win screen
-var youWin = function(){
-  window.location.href = 'aboutus.html';
-};
-var winClick = document.getElementById('winButton');
-winClick.addEventListener('click', youWin);
-var aboutClick = document.getElementById('aboutUs');
-aboutClick.addEventListener('click', youWin);
-
-var graph = function(){
-  window.location.href = '#myChart';
-};
-var statsClick = document.getElementById('stats');
-statsClick.addEventListener('click', graph);
-
-var home = function(){
-  window.location.href = 'index.html';
-};
-var homeClick = document.getElementById('home');
-homeClick.addEventListener('click', home);
-
-
-
-
-
-//-----reserved for counter.html-------------------------------
-
-
-
-
-
-
-
-
-// about chart
+// about chart-------------------------------------------------------
 
 
 function playersName() {

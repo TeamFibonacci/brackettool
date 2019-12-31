@@ -1,5 +1,18 @@
 'use strict';
 
+//---buttons-------------------------------------------
+//home button-----------
+var home = function(){
+  window.location.href = './index.html';
+};
+var homeClick = document.getElementById('home');
+homeClick.addEventListener('click', home);
+//aboutus button----------
+var youWin = function(){
+  window.location.href = 'aboutus.html';
+};
+var aboutClick = document.getElementById('aboutUs');
+aboutClick.addEventListener('click', youWin);
 
 
 var getPlayer1 = localStorage.getItem('setP1');
@@ -40,11 +53,26 @@ function match2Players(){
 }
 match2Players();
 
+//working on points----------------------------------
+
+// var getP1Points = localStorage.getItem('setP1Points');
+// console.log(getP1Points);
+
+// var lifeLoss1 = document.getElementsByTagName('input').item(0).value;
+// var life = function(){
+//   parseInt(lifeLoss1);
+//   return lifeLoss1;
+// };
+// life();
+
+// var pointsClick = document.getElementById('points1');
+// pointsClick.addEventListener('submit', life);
 
 
+// localStorage.setItem('setLoss', lifeLoss1);
 
 
-
+//-------------------
 
 
 
