@@ -180,9 +180,16 @@ background-color: rgba(7, 6, 6, 0.719); */
     background-image: url('img/fantasyBackround.jpg');
     width: 200px;
     height: 200px;
-    /* you need to match the shadow color to your background or image border for the desired effect*/
     box-shadow: 0 0 8px 8px white inset;
 }
  #playerImg{
 	 border-image: none;
  }
+ .flex-container {
+  display: flex;
+	justify-content:space-around;
+	background: url('../img/fantasyBackground.jpg') no-repeat center/cover;
+	width: 540px;
+  height: 400px;
+  box-shadow: 0 0 8px 8px white inset;
+}
