@@ -58,18 +58,77 @@ match2Players();
 // var getP1Points = localStorage.getItem('setP1Points');
 // console.log(getP1Points);
 
-// var lifeLoss1 = document.getElementsByTagName('input').item(0).value;
-// var life = function(){
-//   parseInt(lifeLoss1);
-//   return lifeLoss1;
-// };
-// life();
 
 // var pointsClick = document.getElementById('points1');
 // pointsClick.addEventListener('submit', life);
-
-
 // localStorage.setItem('setLoss', lifeLoss1);
+
+//--------------------new points-----------------------
+//life of player1
+
+
+
+var runLife = function(){
+
+  var lifeText1 = document.getElementById('pts1');
+  var updateLifeP1 = function(){
+    lifeText1.textContent = lifeP1;
+  };
+  var lifeP1 = 40;
+  var lifeMinusP1 = function(){
+    console.log('-1');
+    updateLifeP1();
+    return lifeP1 --;
+  };
+  var lifeMinusButtonP1 = document.getElementById('p1minus');
+  lifeMinusButtonP1.addEventListener('click', lifeMinusP1);
+  var lifePlusP1 = function(){
+    console.log('+1');
+    updateLifeP1();
+    return lifeP1 ++;
+  };
+  var lifePlusButtonP1 = document.getElementById('p1plus');
+  lifePlusButtonP1.addEventListener('click', lifePlusP1);
+  //store p1 value
+  localStorage.getItem('p1Minus', lifeP1);
+
+  //---
+
+  var lifeText2 = document.getElementById('pts2');
+  var updateLifeP2 = function(){
+    lifeText2.textContent = lifep2;
+  };
+  var lifep2 = 40;
+  var lifeMinusP2 = function(){
+    console.log('-1');
+    updateLifeP2();
+    return lifep2 --;
+  };
+  var lifeMinusButtonP2 = document.getElementById('p2minus');
+  lifeMinusButtonP2.addEventListener('click', lifeMinusP2);
+  var lifePlusP2 = function(){
+    console.log('+1');
+    updateLifeP2();
+    return lifep2 ++;
+  };
+  var lifePlusButtonP2 = document.getElementById('p2plus');
+  lifePlusButtonP2.addEventListener('click', lifePlusP2);
+  //store p1 value
+  localStorage.getItem('p2Minus', lifep2);
+
+
+};
+
+//page switching
+if (window.location.pathname === '/Users/kenny/code201/brackettool/counter.html'
+){
+  runLife();
+}
+else{
+  runlife2();
+}
+
+
 
 
 //-------------------
