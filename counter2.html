@@ -1,62 +1,62 @@
 <html lang="en">
-<head>
-  <link href="https://fonts.googleapis.com/css?family=Ceviche+One&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  
-</head>
-<body>
+  <head>
 
-  <header style="background-image: linear-gradient(to right, maroon, red, grey, black);">
-    <div class="container">
-     <div id="header">
-       <element id="grad">
- 
-   <div id ="logo">
-     <img src="img/logo.gif" alt="logo">
-     <!-- http://127.0.0.1:5500/img/plus.png -->
-     <!-- http://127.0.0.1:5500/img/minus.png -->
-   <button id="Damage Counter" class="nav">Damage</button>
-   <button id="About Us" class="nav">About Us</button>
-   <button id="Stats" class="nav">Stats</button>
-  </div>
- </div>
- 
- </header>
- 
-  <div id="damageButtons">
-    <!-- https://stackoverflow.com/questions/24709915/blur-the-edges-of-an-image-or-background-image-with-css -->
-    <div class="image-blurred-edge">
-      <img src="img/fantasyBackground.jpg" id="playerImg" width="550" height="400" alt="playerImg">
+    <link href="https://fonts.googleapis.com/css?family=Ceviche+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+  </head>
+  <body>
 
-    </div>
-    <img src="img/minus.png" id="minus" width="70px" height="70 "alt="minus">
-    <img src="img/plus.png" id="plus" width="80" height="80"   alt="plus">
-  </div>
+    <header style="background-image: linear-gradient(to right, maroon, red, grey, black);">
+      <div class="container">
+        <div id="header">
+          <element id="grad">
 
-  
-<!-- todo add event listener for this input -->
+          <div id ="logo">
+            <img src="img/logo.gif" alt="logo">
+            <button id="DamageCounter" class="nav">Damage</button>
+            <button id="AboutUs" class="nav">About Us</button>
+            <button id="Stats" class="nav">Stats</button>
+          </div>
+        </div>
+      </div>
 
-<ul>Previous Battle
-  <li id="vs1"></li>
-  <li id="vs2"></li>
-  <li id="vs3"></li>
-  <li id="vs4"></li>
-</ul>
+    </header>
 
-<h2 id="vs5">player1:  </h2>
-  <input type="number" name="quantity" min="1" max="5"></input>
-  <h1>Vs</h1>
-<h2 id="vs6">player2:  </h2>
-  <input type="number" name="quantity" min="1" max="5"></input>
+    <main>
+    
+      <div id="damageButtons">
+        <img src="img/minus.png" id="minus" width="70px" height="70 "alt="minus">
+        
+        <img src="img/plus.png" id="plus" width="70" height="70"   alt="plus">
+      </div>
 
-  
+      
+      <!-- todo add event listener for this input -->
 
+      <ul>Previous Battle
+        <li id="vs1"></li>
+        <li id="vs2"></li>
+        <li id="vs3"></li>
+        <li id="vs4"></li>
+      </ul>
 
-  <script src="js/counter.js"></script>
-</body>
+      <h2 id="vs5">player1:  </h2>
+      <input type="number" name="quantity" min="1" max="5"></input>
+      <h1>Vs</h1>
+      <h2 id="vs6">player2:  </h2>
+      <input type="number" name="quantity" min="1" max="5"></input>
+
+    </main>
+    <footer>
+      
+    </footer>
+
+    <script src="js/counter.js"></script>
+  </body>
 </html>
