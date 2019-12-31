@@ -203,3 +203,12 @@ background-color: rgba(7, 6, 6, 0.719); */
 	box-shadow: 0 0 8px 8px white inset;
 }
 
+#trophy {
+	width: 200px;
+	height: 200px;
+	transition: 0.4s ease-in-out;
+	float: right;
+}
+#trophy:hover {
+	 transform: rotate(360deg);
+}
