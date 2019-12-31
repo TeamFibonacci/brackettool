@@ -1,8 +1,8 @@
 <html lang="en">
 <head>
-  <link href="https://fonts.googleapis.com/css?family=Ceviche+One&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="./css/style.css">
-  <link rel="stylesheet" href="./css/reset.css">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Ceviche+One&display=swap" rel="stylesheet"> -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -10,6 +10,7 @@
   
 </head>
 <body>
+
   <header style="background-image: linear-gradient(to right, maroon, red, grey, black);">
     <div class="container">
      <div id="header">
@@ -30,12 +31,26 @@
     
     <img src="img/plus.png" id="plus" width="70" height="70"   alt="plus">
   </div>
+
   
 <!-- todo add event listener for this input -->
-<h2 id="">matthew</h2>
+
+<ul>Previous Battle
+  <li id="vs1"></li>
+  <li id="vs2"></li>
+  <li id="vs3"></li>
+  <li id="vs4"></li>
+</ul>
+
+<h2 id="vs5">player1:  </h2>
   <input type="number" name="quantity" min="1" max="5"></input>
-<h2 id="">mark</h2>
+  <h1>Vs</h1>
+<h2 id="vs6">player2:  </h2>
   <input type="number" name="quantity" min="1" max="5"></input>
 
+  
+
+
+  <script src="js/counter.js"></script>
 </body>
 </html>
