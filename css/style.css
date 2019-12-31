@@ -104,18 +104,15 @@ body{
 footer{
 	width: 500px;
 }
-/* #damageButtons{
-	border-color: rgb(146, 175, 116);
-box-sizing: 15px;
-background-color: rgba(7, 6, 6, 0.719); */
 
-/* } */
+
 /* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_animate3 */
 .counterButton{
 	padding: 2px 2px;
   font-size: 2px;
   text-align: center;
-  cursor: pointer;
+	cursor: pointer;
+	margin-top: 300px;
   outline: none;
   color: #fff;
   background-color: clear;
@@ -137,8 +134,9 @@ background-color: rgba(7, 6, 6, 0.719); */
 .counterButton2{
 	padding: 2px 2px;
   font-size: 2px;
-  text-align: center;
-  cursor: pointer;
+  text-align: bottom;
+	cursor: pointer;
+	margin-top: 300px;
   outline: none;
   color: #fff;
   background-color: clear;
@@ -185,9 +183,21 @@ background-color: rgba(7, 6, 6, 0.719); */
  #playerImg{
 	 border-image: none;
  }
+ .container1{
+	 display: flex;
+	 justify-content: space-evenly;
+ }
+ .versus{
+	 display: flex;
+	 justify-content: space-around;
+	 margin-top:80% ;
+ }
  .flex-container {
+
   display: flex;
-	justify-content:space-around;
+	justify-content:space-between ;
+	padding: 0px 12px 0px 12px;
+
 	background: url('../img/fantasyBackground.jpg') no-repeat center/cover;
 	width: 540px;
   height: 400px;
@@ -196,8 +206,22 @@ background-color: rgba(7, 6, 6, 0.719); */
 /* link for image https://images.search.yahoo.com/search/images;_ylt=Awr4zV..jQteVD0AcUhXNyoA;_ylu=X3oDMTE0cmxkb3ZrBGNvbG8DZ3ExBHBvcwMxBHZ0aWQDQTA2MjBfMQRzZWMDcGl2cw--?p=fantasy+background&fr2=piv-web&fr=mcafee#id=98&iurl=https%3A%2F%2Fwallpapercave.com%2Fwp%2FaD9ULLI.jpg&action=click */
 .flex-container2 {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
+	padding: 0px 12px 0px 12px;
 	background: url('../img/playerBackground.jpg') no-repeat center/cover;
+	width: 540px;
+  height: 400px;
+	box-shadow: 0 0 8px 8px white inset;
+}
+.container{
+	display: flex;
+	justify-content: space-evenly;
+}
+.flex-container3 {
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 12px 0px 12px;
+	background: url('../img/japan.jpg') no-repeat center/cover;
 	width: 540px;
   height: 400px;
 	box-shadow: 0 0 8px 8px white inset;
@@ -211,4 +235,56 @@ background-color: rgba(7, 6, 6, 0.719); */
 }
 #trophy:hover {
 	 transform: rotate(360deg);
+.flex-container4 {
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 12px 0px 12px;
+	background: url('../img/broken.jpg') no-repeat center/cover;
+	width: 540px;
+  height: 400px;
+	box-shadow: 0 0 8px 8px white inset;
+}
+.counterButton3{
+	padding: 2px 2px;
+  font-size: 2px;
+	text-align: center;
+	margin-top: 300px;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: clear;
+  border: none;
+  border-radius: 1px;
+	box-shadow: 0px black;
+	max-height: calc(100% - 5px);
+}
+
+.counterButton3:hover {background-color: clear}
+
+.counterButton3:active {
+  /* background-color:; */
+  box-shadow: 0px clear;
+  transform: translateY(5px);
+}
+.counterButton4{
+	padding: 2px 2px;
+  font-size: 2px;
+	text-align: center;
+	margin-top: 300px;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: clear;
+  border: none;
+  border-radius: 1px;
+	box-shadow: 0px black;
+	max-height: calc(100% - 5px);
+}
+
+.counterButton4:hover {background-color: clear}
+
+.counterButton4:active {
+  /* background-color:; */
+  box-shadow: 0px clear;
+  transform: translateY(5px);
 }
