@@ -1,5 +1,6 @@
 'use strict';
 
+
 //---buttons-------------------------------------------
 //home button-----------
 var home = function(){
@@ -14,16 +15,27 @@ var youWin = function(){
 var aboutClick = document.getElementById('aboutUs');
 aboutClick.addEventListener('click', youWin);
 
-var counter2 = function(){
-  window.location.href = './counter2.html';
+var winScreen = function(){
+  var winClick = document.getElementById('winButton');
+  winClick.addEventListener('click', youWin);
 };
-var match2Click = document.getElementById('match2');
-match2Click.addEventListener('click', counter2);
+if (window.location.pathname === '/Users/kenny/code201/brackettool/counter2.html'){
+  winScreen();
+}
 
-var winClick = document.getElementById('winButton');
-winClick.addEventListener('click', youWin);
+var counter2 = function(){
+  window.location.href = 'counter2.html';
+};
+var counter2Screen = function(){
+  var match2Click = document.getElementById('match2');
+  match2Click.addEventListener('click', counter2);
+};
+if (window.location.pathname === '/Users/kenny/code201/brackettool/counter.html'){
+  counter2Screen();
+}
 
 
+//get player names
 var getPlayer1 = localStorage.getItem('setP1');
 var getPlayer2 = localStorage.getItem('setP2');
 var getPlayer3 = localStorage.getItem('setP3');
@@ -179,8 +191,35 @@ if (window.location.pathname === '/Users/kenny/code201/brackettool/counter.html'
   runLife();
 }
 else{
-  runlife2();
+  // runlife2();
 }
+
+if (window.location.pathname === '/Users/kenny/code201/brackettool/counter.html'{}
+function playerWinMatch1A(){
+  if (lifeP1 <= lifeP2){
+    return getPlayer1;
+  } else{
+    return getPlayer2;
+  }
+}
+//Decide who wins lower set based on points
+function playerWinMatch1B(){
+  if (lifeP3 <= lifeP4){
+    return getPlayer3;
+  } else{
+    return getPlayer4;
+  }
+}
+if (window.location.pathname === '/Users/kenny/code201/brackettool/counter.html'){
+playerWinMatch1A();
+playerWinMatch1B();
+}
+
+
+
+
+
+
 
 
 

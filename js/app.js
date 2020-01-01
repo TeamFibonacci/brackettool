@@ -7,18 +7,12 @@ var counter1 = function(){
 };
 var match1Click = document.getElementById('match1');
 match1Click.addEventListener('click', counter1);
-//button to match 2
-// var counter2 = function(){
-//   window.location.href = 'counter2.html';
-// };
-// var match2Click = document.getElementById('match2');
-// match2Click.addEventListener('click', counter2);
+
 //button to win screen
 var youWin = function(){
   window.location.href = 'aboutus.html';
 };
-var winClick = document.getElementById('winButton');
-winClick.addEventListener('click', youWin);
+
 var aboutClick = document.getElementById('aboutUs');
 aboutClick.addEventListener('click', youWin);
 //button to scroll to chart
@@ -115,43 +109,43 @@ var four = new OrganicPlayer(player4, 40);
 
 
 //Decide who wins first upper set based on points
-function playerWinMatch1A(){
-  if (one.points <= two.points){
-    return one;
-  } else{
-    return two;
-  }
-}
-playerWinMatch1A();
-//Decide who wins lower set based on points
-function playerWinMatch1B(){
-  if (three.points <= four.points){
-    return three;
-  } else{
-    return four;
-  }
-}
-playerWinMatch1B();
+// function playerWinMatch1A(){
+//   if (one.points <= two.points){
+//     return one;
+//   } else{
+//     return two;
+//   }
+// }
+// playerWinMatch1A();
+// //Decide who wins lower set based on points
+// function playerWinMatch1B(){
+//   if (three.points <= four.points){
+//     return three;
+//   } else{
+//     return four;
+//   }
+// }
+// playerWinMatch1B();
 
-//MATCH2
-//Adding winners from match 1 to match 2
-function organicplayersMatch2(){
-  var table = document.getElementById('playersWin1');
-  var newTD = document.createElement('td');
-  var addText = document.createTextNode(` ${playerWinMatch1A().name} vs ${playerWinMatch1B().name} Get ready!`);
-  newTD.appendChild(addText);
-  table.appendChild(newTD);
-}
-organicplayersMatch2();
+// //MATCH2
+// //Adding winners from match 1 to match 2
+// function organicplayersMatch2(){
+//   var table = document.getElementById('playersWin1');
+//   var newTD = document.createElement('td');
+//   var addText = document.createTextNode(` ${playerWinMatch1A().name} vs ${playerWinMatch1B().name} Get ready!`);
+//   newTD.appendChild(addText);
+//   table.appendChild(newTD);
+// }
+// organicplayersMatch2();
 //Return winner
-function win(){
-  if (playerWinMatch1A().points <= playerWinMatch1B().points){
-    return playerWinMatch1A().name;
-  } else{
-    return playerWinMatch1B().name;
-  }
-}
-win();
+// function win(){
+//   if (playerWinMatch1A().points <= playerWinMatch1B().points){
+//     return playerWinMatch1A().name;
+//   } else{
+//     return playerWinMatch1B().name;
+//   }
+// }
+// win();
 //Render winner to screen
 function winRender(){
   var table = document.getElementById('win');
@@ -167,13 +161,15 @@ localStorage.setItem('setP1', one.name);
 localStorage.setItem('setP2', two.name);
 localStorage.setItem('setP3', three.name);
 localStorage.setItem('setP4', four.name);
-localStorage.setItem('setWin1', playerWinMatch1A().name);
-localStorage.setItem('setWin2', playerWinMatch1B().name);
+// localStorage.setItem('setWin1', playerWinMatch1A().name);
+// localStorage.setItem('setWin2', playerWinMatch1B().name);
 // localStorage.setItem('setWinner'. win());
 
 
-// about chart-------------------------------------------------------
 
+
+
+// about chart-------------------------------------------------------
 
 function playersName() {
   var answer = [];
@@ -182,6 +178,7 @@ function playersName() {
   }
   return answer;
 }
+
 
 
 // function pointsWin() {
