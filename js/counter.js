@@ -19,7 +19,7 @@ var winScreen = function(){
   var winClick = document.getElementById('winButton');
   winClick.addEventListener('click', youWin);
 };
-if (window.location.pathname === '/Users/kenny/code201/brackettool/counter2.html'){
+if (window.location.pathname.includes('counter2.html')){
   winScreen();
 }
 
@@ -30,7 +30,7 @@ var counter2Screen = function(){
   var match2Click = document.getElementById('match2');
   match2Click.addEventListener('click', counter2);
 };
-if (window.location.pathname === '/Users/kenny/code201/brackettool/counter.html'){
+if (window.location.pathname.includes('counter.html')){
   counter2Screen();
 }
 
@@ -40,8 +40,8 @@ var getPlayer1 = localStorage.getItem('setP1');
 var getPlayer2 = localStorage.getItem('setP2');
 var getPlayer3 = localStorage.getItem('setP3');
 var getPlayer4 = localStorage.getItem('setP4');
-var getPlayerWin1 = localStorage.getItem('setWin1');
-var getPlayerWin2 = localStorage.getItem('setWin2');
+// var getPlayerWin1 = localStorage.getItem('setWin1');
+// var getPlayerWin2 = localStorage.getItem('setWin2');
 // var getWinner = localStorage.getItem('winner');
 
 
@@ -66,10 +66,10 @@ match1PlayersB();
 
 function match2Players(){
   var versus3 = document.getElementById('vs5');
-  var addText3 = document.createTextNode(`${getPlayerWin1} player info here`);
+  var addText3 = document.createTextNode(`${playerWinMatch1A()} player info here`);
   versus3.appendChild(addText3);
   var versus4 = document.getElementById('vs6');
-  var addText4 = document.createTextNode(`${getPlayerWin2} player info here`);
+  var addText4 = document.createTextNode(`${playerWinMatch1B()} player info here`);
   versus4.appendChild(addText4);
 }
 match2Players();
@@ -92,6 +92,10 @@ var lifeP1 = 40;
 var lifeP2 = 40;
 var lifeP3 = 40;
 var lifeP4 = 40;
+var lifeM2P1 = 40;
+var lifeM2P2 = 40;
+
+
 var runLife = function(){
   //p1
   var lifeText1 = document.getElementById('pts1');
@@ -177,56 +181,85 @@ var runLife = function(){
   lifePlusButtonP4.addEventListener('click', lifePlusP4);
 
 };
+
+var runLife2 = function(){
+  //match 2 p1
+  var lifeText5 = document.getElementById('pts5');
+  var updateLifeP5 = function(){
+    lifeText5.textContent = lifeM2P1;
+  };
+  var lifeMinusP5 = function(){
+    console.log('-1');
+    updateLifeP5();
+    return lifeM2P1 --;
+  };
+  var lifeMinusButtonP5 = document.getElementById('tier2p1minus');
+  lifeMinusButtonP5.addEventListener('click', lifeMinusP5);
+  var lifePlusP5 = function(){
+    console.log('+1');
+    updateLifeP5();
+    return lifeM2P1 ++;
+  };
+  var lifePlusButtonP5 = document.getElementById('tier2p1plus');
+  lifePlusButtonP5.addEventListener('click', lifePlusP5);
+
+  //match 2 p2-------------
+
+  var lifeText6 = document.getElementById('pts6');
+  var updateLifeP6 = function(){
+    lifeText6.textContent = lifeM2P2;
+  };
+  var lifeMinusP6 = function(){
+    console.log('-1');
+    updateLifeP6();
+    return lifeM2P2 --;
+  };
+  var lifeMinusButtonP6 = document.getElementById('tier2p2minus');
+  lifeMinusButtonP6.addEventListener('click', lifeMinusP6);
+  var lifePlusP6 = function(){
+    console.log('+1');
+    updateLifeP6();
+    return lifeM2P2 ++;
+  };
+  var lifePlusButtonP6 = document.getElementById('tier2p2plus');
+  lifePlusButtonP6.addEventListener('click', lifePlusP6);
+
+};
+
+
 localStorage.setItem('p1life', lifeP1);
 localStorage.setItem('p2life', lifeP2);
 localStorage.setItem('p3life', lifeP3);
 localStorage.setItem('p4life', lifeP4);
 
 
-
-
 //page switching
-if (window.location.pathname === '/Users/kenny/code201/brackettool/counter.html'
-){
+if (window.location.pathname.includes('counter.html')){
   runLife();
 }
 else{
-  // runlife2();
+  runLife2();
 }
 
-if (window.location.pathname === '/Users/kenny/code201/brackettool/counter.html'{}
+
 function playerWinMatch1A(){
-  if (lifeP1 <= lifeP2){
+  if (lifeP1 >= lifeP2){
     return getPlayer1;
   } else{
     return getPlayer2;
   }
 }
+
 //Decide who wins lower set based on points
 function playerWinMatch1B(){
-  if (lifeP3 <= lifeP4){
+  if (lifeP3 >= lifeP4){
     return getPlayer3;
   } else{
     return getPlayer4;
   }
 }
-if (window.location.pathname === '/Users/kenny/code201/brackettool/counter.html'){
-playerWinMatch1A();
-playerWinMatch1B();
+if (window.location.pathname.includes('counter.html')){
+  playerWinMatch1A();
+  playerWinMatch1B();
 }
-
-
-
-
-
-
-
-
-
-
-//-------------------
-
-
-
-
 
