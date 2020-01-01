@@ -1,16 +1,17 @@
-
+/* color pallette for this project
+#092327
+#0B5351
+#00A9A5
+#4E8098
+#90C2E7 */
 h1, h2 {
-	color: rgb(236, 240, 21);
+	color: #092327;
 	text-align: center;
-	background-color: rgb(56, 35, 7);
+	background-color: #00A9A5;
 }
 
 a{
-	color: red;
-}
-
-span {
-	color: red;
+	color: #00A9A5;
 }
 
 .pic, .pic1, .pic2 {
@@ -107,7 +108,7 @@ main{
 } 
 
 .container{
-	border: 2px solid black;
+	border: 2px #00A9A5;
 	padding: 25px;
 	background-size: auto; 
 	
@@ -176,16 +177,16 @@ footer{
   cursor: pointer;
   outline: none;
   color: rgb(0, 0, 0);
-  background-color: rgb(182, 3, 3);
+  background-color: #4E8098;
   border: none;
   border-radius: 15px;
 	box-shadow: 0 9px 0 2px rgb(58, 49, 49);
 }
 
-.nav:hover {background-color: #fa0606}
+.nav:hover {background-color: #CE84AD}
 
 .nav:active {
-  background-color: #f8fcf7;
+  background-color:  #4E8098;
   box-shadow: 0 5px rgb(49, 44, 44);
   transform: translateY(4px);
 }
@@ -261,6 +262,7 @@ footer{
 		display: flex;
 		justify-content: space-between;
 		padding: 0px 12px 0px 12px;
+		/* https://i.pinimg.com/originals/e7/15/61/e71561e889c62344122520c6337b68f6.jpg */
 		background: url('../img/player3.jpg') no-repeat center/cover;
 		width: 540px;
 		height: 400px;
@@ -270,6 +272,7 @@ footer{
 	display: flex;
 	justify-content: space-between;
 	padding: 0px 12px 0px 12px;
+	/* https://s-media-cache-ak0.pinimg.com/736x/f7/7e/cc/f77eccdd08fe02de714221f17ea2fe87--apocalypse-art-fantasy-landscape.jpg */
 	background: url('../img/destroyer.jpg') no-repeat center/cover;
 	width: 540px;
 	height: 400px;
@@ -368,7 +371,12 @@ footer{
 	transform: translateY(5px);
 }
 #pts1[type=text]{
-	background-color:clear;
+	/* background-color:clear; */
+	font-family: 'Ceviche One', cursive;
+	color: rgba(78,128,152,0.80);
+	/* position: relative; */
+	/* opacity: %; */
+
 	width: 200px;
 	margin-top: 30px;
 	font-size: 200;
@@ -378,6 +386,10 @@ footer{
 
 #pts2[type=text]{
 	background-color:clear;
+	font-family: 'Ceviche One', cursive;
+	color: rgba(78,128,152,0.80);
+
+
 	width: 200px;
 	margin-top: 30px;
 	font-size: 200;
@@ -386,6 +398,10 @@ footer{
 }
 #pts3[type=text]{
 	background-color:clear;
+	font-family: 'Ceviche One', cursive;
+	color: rgba(78,128,152,0.80);
+
+
 	width: 200px;
 	margin-top: 30px;
 	font-size: 200;
@@ -395,11 +411,16 @@ footer{
 }
 #pts4[type=text]{
 	background-color:clear;
+	font-family: 'Ceviche One', cursive;
+	color: rgba(78,128,152,0.80);
+	border-radius: 20px;
+
 	width: 200px;
 	margin-top: 30px;
 	font-size: 200;
 	color: gradient;
 	/* text-size-adjust: ; */
+
 
 
 }
