@@ -420,15 +420,16 @@ footer{
 	font-size: 200;
 	color: gradient;
 	/* text-size-adjust: ; */
+
+
+
 }
-	/* for the trophy */
+/* for the trophy */
 .contain {
-  width: 5px;
-  height: 300px;
-	float: right;
-	margin-left: 50px;
+  width: 3px;
+  float: right;
+	margin-right: 200px;
 	animation: rotate 5s linear infinite;
-	/* position: relative; */
 }
 @keyframes rotate {
   65% {
