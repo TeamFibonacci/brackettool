@@ -402,15 +402,13 @@ footer{
 	/* text-size-adjust: ; */
 
 
-
+}
 /* for the trophy */
 .contain {
-  width: 5px;
-  height: 300px;
+  width: 3px;
   float: right;
-	margin-left: 500px;
+	margin-right: 200px;
 	animation: rotate 5s linear infinite;
-	/* position: relative; */
 }
 @keyframes rotate {
   65% {

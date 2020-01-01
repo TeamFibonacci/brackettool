@@ -179,13 +179,16 @@ function playersName() {
   return answer;
 }
 
-function pointsWin() {
-  var answer = [];
-  for(var i = 0; i < allPlayer.points; i++) {
-    answer[i] = allPlayer[i].points;
-  }
-  return answer;
-}
+
+
+// function pointsWin() {
+//   var answer = [];
+//   for(var i = 0; i < allPlayer.points; i++) {
+//     answer[i] = allPlayer[i].points;
+//   }
+//   return answer;
+// }
+
 
 function renderChart(){
   var ctx = document.getElementById('myChart').getContext('2d');
@@ -196,7 +199,7 @@ function renderChart(){
       labels: playersName(),
       datasets: [{
         label: '# of points',
-        data: pointsWin(),
+        data: [2, 6, 5, 9],
         backgroundColor: [
           'rgba(255, 99, 132, 0.2)',
           'rgba(54, 162, 235, 0.2)',
