@@ -56,17 +56,13 @@ function player4Name(){
   return getPlayer4Name;
 }
 
-var player1;
-var player2;
-var player3;
-var player4;
-
 //player names in vars for later use
 
-player1 = player1Name();
-player2 = player2Name();
-player3 = player3Name();
-player4 = player4Name();
+var player1 = player1Name();
+var player2 = player2Name();
+var player3 = player3Name();
+var player4 = player4Name();
+
 
 //adding first set of organic players to document
 function organicPlayers1(){
@@ -147,14 +143,14 @@ var four = new OrganicPlayer(player4, 40);
 // }
 // win();
 //Render winner to screen
-function winRender(){
-  var table = document.getElementById('win');
-  var newTD = document.createElement('td');
-  var addText = document.createTextNode(` ${win()} wins the tournament!!`);
-  newTD.appendChild(addText);
-  table.appendChild(newTD);
-}
-winRender();
+// function winRender(){
+//   var table = document.getElementById('win');
+//   var newTD = document.createElement('td');
+//   var addText = document.createTextNode(` ${win()} wins the tournament!!`);
+//   newTD.appendChild(addText);
+//   table.appendChild(newTD);
+// }
+// winRender();
 
 //localstorage for name brackets-----------------
 localStorage.setItem('setP1', one.name);
@@ -178,17 +174,6 @@ function playersName() {
   }
   return answer;
 }
-
-
-
-// function pointsWin() {
-//   var answer = [];
-//   for(var i = 0; i < allPlayer.points; i++) {
-//     answer[i] = allPlayer[i].points;
-//   }
-//   return answer;
-// }
-
 
 function renderChart(){
   var ctx = document.getElementById('myChart').getContext('2d');
