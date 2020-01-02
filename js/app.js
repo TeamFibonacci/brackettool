@@ -8,19 +8,22 @@ var counter1 = function(){
 var match1Click = document.getElementById('match1');
 match1Click.addEventListener('click', counter1);
 
+// var graphP = document.getElementById('myChart');
+// graphP.addEventListener(renderChart);
+
 //button to win screen
 var youWin = function(){
   window.location.href = 'aboutus.html';
 };
-
 var aboutClick = document.getElementById('aboutUs');
 aboutClick.addEventListener('click', youWin);
+
 //button to scroll to chart
-var graph = function(){
-  window.location.href = '#myChart';
-};
-var statsClick = document.getElementById('stats');
-statsClick.addEventListener('click', graph);
+// var graph = function(){
+//   window.location.href = '#myChart';
+// };
+// var statsClick = document.getElementById('stats');
+// statsClick.addEventListener('click', graph);
 
 
 // Add var allPlayer = []  help to push this
@@ -101,50 +104,50 @@ localStorage.setItem('setP4', four.name);
 
 // about chart-------------------------------------------------------
 
-function playersName() {
-  var answer = [];
-  for(var i = 0; i < allPlayer.length; i++) {
-    answer[i] = allPlayer[i].name;
-  }
-  return answer;
-}
+// function playersName() {
+//   var answer = [];
+//   for(var i = 0; i < allPlayer.length; i++) {
+//     answer[i] = allPlayer[i].name;
+//   }
+//   return answer;
+// }
 
-function renderChart(){
-  var ctx = document.getElementById('myChart').getContext('2d');
-  // eslint-disable-next-line no-undef
-  new Chart(ctx, {
-    type: 'bar',
-    data: {
-      labels: playersName(),
-      datasets: [{
-        label: '# of points',
-        data: [2, 6, 5, 9],
-        backgroundColor: [
-          'rgba(255, 99, 132, 0.2)',
-          'rgba(54, 162, 235, 0.2)',
-          'rgba(255, 206, 86, 0.2)',
-          'rgba(75, 192, 192, 0.2)'
-        ],
-        borderColor: [
-          'rgba(255, 99, 132, 1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(255, 206, 86, 1)',
-          'rgba(75, 192, 192, 1)'
-        ],
-        borderWidth: 1
-      }]
-    },
-    options: {
-      scales: {
-        yAxes: [{
-          ticks: {
-            beginAtZero: true
-          }
-        }]
-      }
-    }
-  });
-}
-renderChart();
+// function renderChart(){
+//   var ctx = document.getElementById('myChart').getContext('2d');
+//   // eslint-disable-next-line no-undef
+//   new Chart(ctx, {
+//     type: 'bar',
+//     data: {
+//       labels: playersName(),
+//       datasets: [{
+//         label: '# of points',
+//         data: [2, 6, 5, 9],
+//         backgroundColor: [
+//           'rgba(255, 99, 132, 0.2)',
+//           'rgba(54, 162, 235, 0.2)',
+//           'rgba(255, 206, 86, 0.2)',
+//           'rgba(75, 192, 192, 0.2)'
+//         ],
+//         borderColor: [
+//           'rgba(255, 99, 132, 1)',
+//           'rgba(54, 162, 235, 1)',
+//           'rgba(255, 206, 86, 1)',
+//           'rgba(75, 192, 192, 1)'
+//         ],
+//         borderWidth: 1
+//       }]
+//     },
+//     options: {
+//       scales: {
+//         yAxes: [{
+//           ticks: {
+//             beginAtZero: true
+//           }
+//         }]
+//       }
+//     }
+//   });
+// }
+// renderChart();
 
 //--counter Js
