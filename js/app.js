@@ -57,7 +57,6 @@ function player4Name(){
 }
 
 //player names in vars for later use
-
 var player1 = player1Name();
 var player2 = player2Name();
 var player3 = player3Name();
@@ -89,81 +88,16 @@ var three = new OrganicPlayer(player3, 40);
 var four = new OrganicPlayer(player4, 40);
 
 
-// TODO!!  write a function to control these points
-
-
-
-
-//localstorage for points------------------------
-// localStorage.setItem('setP1Points', one.points);
-// var p1Minus = localStorage.getItem('setLoss');
-
-// one.points = one.points - p1Minus;
-
-// one.points --;
-// three.points --;
-
-
-//Decide who wins first upper set based on points
-// function playerWinMatch1A(){
-//   if (one.points <= two.points){
-//     return one;
-//   } else{
-//     return two;
-//   }
-// }
-// playerWinMatch1A();
-// //Decide who wins lower set based on points
-// function playerWinMatch1B(){
-//   if (three.points <= four.points){
-//     return three;
-//   } else{
-//     return four;
-//   }
-// }
-// playerWinMatch1B();
-
-// //MATCH2
-// //Adding winners from match 1 to match 2
-// function organicplayersMatch2(){
-//   var table = document.getElementById('playersWin1');
-//   var newTD = document.createElement('td');
-//   var addText = document.createTextNode(` ${playerWinMatch1A().name} vs ${playerWinMatch1B().name} Get ready!`);
-//   newTD.appendChild(addText);
-//   table.appendChild(newTD);
-// }
-// organicplayersMatch2();
-//Return winner
-// function win(){
-//   if (playerWinMatch1A().points <= playerWinMatch1B().points){
-//     return playerWinMatch1A().name;
-//   } else{
-//     return playerWinMatch1B().name;
-//   }
-// }
-// win();
-//Render winner to screen
-// function winRender(){
-//   var table = document.getElementById('win');
-//   var newTD = document.createElement('td');
-//   var addText = document.createTextNode(` ${win()} wins the tournament!!`);
-//   newTD.appendChild(addText);
-//   table.appendChild(newTD);
-// }
-// winRender();
-
 //localstorage for name brackets-----------------
 localStorage.setItem('setP1', one.name);
 localStorage.setItem('setP2', two.name);
 localStorage.setItem('setP3', three.name);
 localStorage.setItem('setP4', four.name);
-// localStorage.setItem('setWin1', playerWinMatch1A().name);
-// localStorage.setItem('setWin2', playerWinMatch1B().name);
-// localStorage.setItem('setWinner'. win());
 
+// var p1Summary = localStorage.getItem('p1life');
 
-
-
+// var kenPlus = localStorage.getItem('kenwin+');
+// var parsedKenPlus = JSON.parse(kenPlus);
 
 // about chart-------------------------------------------------------
 
