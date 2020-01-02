@@ -124,7 +124,12 @@ footer{
 
 
 /* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_animate3 */
-.counterButton{
+.counterButton,
+.counterButton2,
+.counterButton3, 
+.counterButton4,
+.counterButton5,
+.counterButton6{
 	padding: 2px 2px;
   font-size: 2px;
   text-align: center;
@@ -139,16 +144,18 @@ footer{
 	max-height: calc(100% - 5px);
 }
 
-.counterButton:hover {background-color: clear}
+.counterButton:hover,
+.counterButton2:hover {background-color: clear}
 
-.counterButton:active {
+.counterButton:active,
+.counterButton2:active {
   background-color: clear;
   box-shadow: 0px clear;
   transform: translateY(5px);
 }
 
 /* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_animate3 */
-.counterButton2{
+/* .counterButton2{
 	padding: 2px 2px;
   font-size: 2px;
   text-align: bottom;
@@ -161,15 +168,15 @@ footer{
   border-radius: 1px;
 	box-shadow: 0px black;
 	max-height: calc(100% - 5px);
-}
+} */
 
-.counterButton2:hover {background-color: clear}
+/* .counterButton2:hover {background-color: clear}
 
 .counterButton2:active {
-  /* background-color:; */
+  background-color: clear;
   box-shadow: 0px clear;
   transform: translateY(5px);
-}
+} */
 .nav {
   padding: 15px 25px;
   font-size: 20px;
@@ -209,7 +216,21 @@ footer{
 	 justify-content: space-around;
 	 margin-top:80% ;
  }
+
  .flex-container {
+	  display: flex;
+		justify-content:space-between ;
+		padding: 0px 12px 0px 12px;
+		width: 540px;
+  	height: 400px;
+		box-shadow: 0 0 8px 8px white inset;
+ } 
+
+ .flex-container1 {
+	  background: url('../img/fantasyBackground.jpg') no-repeat center/cover;
+ }
+
+ /* .flex-container {
 
   display: flex;
 	justify-content:space-between ;
@@ -219,16 +240,16 @@ footer{
 	width: 540px;
   height: 400px;
   box-shadow: 0 0 8px 8px white inset;
-}
+} */
 /* link for image https://images.search.yahoo.com/search/images;_ylt=Awr4zV..jQteVD0AcUhXNyoA;_ylu=X3oDMTE0cmxkb3ZrBGNvbG8DZ3ExBHBvcwMxBHZ0aWQDQTA2MjBfMQRzZWMDcGl2cw--?p=fantasy+background&fr2=piv-web&fr=mcafee#id=98&iurl=https%3A%2F%2Fwallpapercave.com%2Fwp%2FaD9ULLI.jpg&action=click */
 .flex-container2 {
-	display: flex;
-	justify-content: space-between;
-	padding: 0px 12px 0px 12px;
+	/* display: flex; */
+	/* justify-content: space-between; */
+	/* padding: 0px 12px 0px 12px; */
 	background: url('../img/playerBackground.jpg') no-repeat center/cover;
-	width: 540px;
-  height: 400px;
-	box-shadow: 0 0 8px 8px white inset;
+	/* width: 540px; */
+  /* height: 400px; */
+	/* box-shadow: 0 0 8px 8px white inset; */
 }
 .container{
 	display: flex;
@@ -278,7 +299,7 @@ footer{
 	height: 400px;
 	box-shadow: 0 0 8px 8px white inset;
 }
-.counterButton3{
+.counterButton3 {
 	padding: 2px 2px;
   font-size: 2px;
 	text-align: center;
