@@ -63,7 +63,7 @@ body{
 button{
 	font-family: 'Ceviche One', cursive;
 	font-size: 40PX;
-	text-align: center;
+	text-align: right;
 }
 .fight, .fight1, .fight2{
   padding: 15px 25px;
@@ -164,8 +164,6 @@ main{
 	background-size: auto; 
 }
 
-
-
 /* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_animate3 */
 .counterButton,
 .counterButton2,
@@ -226,7 +224,8 @@ main{
 
 .nav {
   padding: 15px 25px;
-  font-size: 20px;
+	font-size: 20px;
+	text-align: center;
   cursor: pointer;
   outline: none;
   color: rgb(0, 0, 0);
@@ -248,15 +247,15 @@ main{
   transform: translateY(4px);
 }
 
-	.image-blurred-edge {
-    background-image: url('img/fantasyBackround.jpg');
-    width: 200px;
-    height: 200px;
-    box-shadow: 0 0 8px 8px white inset;
+.image-blurred-edge {
+  background-image: url('img/fantasyBackround.jpg');
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 0 8px 8px white inset;
 }
 
- #playerImg{
-	 border-image: none;
+#playerImg{
+	border-image: none;
  }
 
  .container1{
@@ -442,66 +441,104 @@ main{
   box-shadow: 0px clear;
 	transform: translateY(5px);
 }
-
+/*link for how i did the gradient text
+ https://cssgradient.io/blog/css-gradient-text/ */
+ /* https://media.tenor.com/images/ae5eed3c4026dd9766f4ee602c58deb3/tenor.gif */
 #pts1[type=text]{
+	position: relative;
 	font-family: 'Ceviche One', cursive;
-	color: rgba(78,128,152,0.80);
+	color:rgba(255, 255, 255, 0.8);
 	width: 200px;
 	margin-top: 30px;
-	font-size: 200;
+	font-size: 186;
+	background: url('../img/sparkle.gif');
+  -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	opacity: 88%;
 }
-
+/* https://lh3.googleusercontent.com/-C4H2ze5uD6g/UNzy12PSsZI/AAAAAAAAAwI/tPLX834jCWY/s630-fcrop64=1,00000000bee692b6/EerieGreenSmoke.gif%2B2.gif */
 #pts2[type=text]{
 	background-color:clear;
 	font-family: 'Ceviche One', cursive;
-	color: rgba(78,128,152,0.80);
+	color: rgba(49, 133, 252, 0.80);
 	width: 200px;
 	margin-top: 30px;
-	font-size: 200;
-	color: gradient;
-}
+	font-size: 186;
+	background: url('../img/greensmoke.gif');
+	/* background-attachment: fixed; */
+	background-size: 310px;
+	background-repeat: none;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	opacity: 78%;
 
+}
+/* https://media.giphy.com/media/4eKJOJ6E2V5U4/giphy.gif */
 #pts3[type=text]{
 	background-color:clear;
 	font-family: 'Ceviche One', cursive;
-	color: rgba(78,128,152,0.80);
+	color:rgba(167, 29, 49, 0.8);
 	width: 200px;
 	margin-top: 30px;
-	font-size: 200;
-	color: gradient;
+	font-size: 186;
+	background: url('../img/leaf.gif');
+	background-size: 300px;
+	background-repeat: none;
+  -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	opacity: 78%;
 }
-
+/* https://scitechdaily.com/images/Lava-Flow.gif */
 #pts4[type=text]{
 	background-color:clear;
 	font-family: 'Ceviche One', cursive;
-	color: rgba(78,128,152,0.80);
+	color: rgba(255, 201, 20, 0.80);
 	border-radius: 20px;
 	width: 200px;
 	margin-top: 30px;
-	font-size: 200;
-	color: gradient;
+	font-size: 186;
+	background: url('../img/lava.gif');
+	/* background-attachment: fixed; */
+	background-size: 410px;
+	background-repeat: none;
+  -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	opacity: 78%;
 	}
-
+	/* https://media.giphy.com/media/3ohhwEZqxzKbNUHzji/giphy.gif */
 #pts5[type=text]{
 	background-color:clear;
 	font-family: 'Ceviche One', cursive;
-	color: rgba(78,128,152,0.80);
+	color: rgba(238, 232, 44, 0.8);
 	border-radius: 20px;
 	width: 200px;
 	margin-top: 30px;
-	font-size: 200;
-	color: gradient;
+	font-size: 186;
+	background: url('../img/wormhole.gif');
+	/* background-attachment: fixed; */
+	background-size: 200px;
+	background-repeat: none;
+  -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	opacity: 78%;
 }
-
+/* https://78.media.tumblr.com/9f6f84c024ecb14a59a7f760089dc3d4/tumblr_p0v4s99CGz1uj7swzo1_500.gif */
 #pts6[type=text]{
 	background-color:clear;
 	font-family: 'Ceviche One', cursive;
-	color: rgba(78,128,152,0.80);
+	color: rgba(248, 247, 255, 0.8);
 	border-radius: 20px;
 	width: 200px;
 	margin-top: 30px;
-	font-size: 200;
-	color: gradient;
+	font-size: 186;
+	background: url('../img/planet.gif');
+	/* background-attachment: fixed; */
+	background-size: px;
+	background-repeat: none;
+	background-position: top;
+  -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	opacity: 78%;
 }
 /* for the trophy */
 .contain {
