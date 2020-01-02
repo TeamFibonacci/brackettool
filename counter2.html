@@ -1,91 +1,93 @@
 <html lang="en">
-  <head>
 
-    <link href="https://fonts.googleapis.com/css?family=Ceviche+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    
-  </head>
-  <body>
+<head>
 
-    <header style="background-image: linear-gradient(to right,#90C2E7,#4E8098,#00A9A5,#0B5351, #092327);">
-      <div class="container">
-     <div id="header">
-       <element id="grad">
- 
-   <div id ="logo">
-     <img src="img/logo.gif" alt="logo">
-   <!-- <button id="DamageCounter" class="nav">Damage</button> -->
-   <button id="aboutUs" type="button" class="nav">About Us</button>
-   <button id="home" type="button" class="nav">Home</button>
-  </div>
- </div>
- 
- </header>
- 
+  <link href="https://fonts.googleapis.com/css?family=Ceviche+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+</head>
+
+<body>
+
+  <header style="background-image: linear-gradient(to right,#90C2E7,#4E8098,#00A9A5,#0B5351, #092327);">
+    <div class="container">
+      <div id="header">
+        <element id="grad">
+
+          <div id="logo">
+            <img src="img/logo.gif" alt="logo">
+            <!-- <button id="DamageCounter" class="nav">Damage</button> -->
+            <button id="aboutUs" type="button" class="nav">About Us</button>
+            <button id="home" type="button" class="nav">Home</button>
+          </div>
+      </div>
+
+  </header>
+
   <!-- https://stackoverflow.com/questions/24709915/blur-the-edges-of-an-image-or-background-image-with-css -->
   <!-- https://www.w3schools.com/csS/css3_flexbox.asp -->
   <div class="container1">
-<div class="flex-container">  
-  <div>
-    <img src="img/minus.png" class="counterButton" id="tier2p1minus" width="70px" height="70 "alt="minus">
-  </div>
-  <P id="pts5" type="text" width="150" >40</P>
-  <div>
-    <img src="img/plus.png" class="counterButton" id="tier2p1plus" width="80" height="80"   alt="plus">
-  </div>
-</div>
-<!-- https://static3.comicvine.com/uploads/scale_super/11130/111300953/5440456-4284025-6271335549-vs.pn.png -->
-<div>
-  <img src="img/versus.png" class="versus" id="versus" width="150" >
-</div>
-
-
-<div class="flex-container2">
-
-  <div>
-    <img src="img/minus.png" class="counterButton2" id="tier2p2minus" width="70px" height="70 "alt="minus">
-  </div>
-  <P id="pts6" type="text" width="150" >40</P>
-
-  <div>
-    <img src="img/plus.png" class="counterButton2" id="tier2p2plus" width="80" height="80"   alt="plus">
-  </div>
-</div>
-</div>
-
-      <main>
-      <!-- todo add event listener for this input -->
-
-      <ul>Previous Battle
-        <li id="vs1"></li>
-        <li id="vs2"></li>
-        <li id="vs3"></li>
-        <li id="vs4"></li>
-      </ul>
-
-      <h2 id="vs5">player1:  </h2>
-      <h1>Vs</h1>
-      <h2 id="vs6">player2:  </h2>
-
-    </main>
-    <footer>
+    <div class="flex-container flex-container1">
       <div>
-        <table>
-            <tr>
-              <th>Click here to see who won!</th>
-            </tr>
-            <tr id="win">
-            </tr>
-        </table>
-        <button id="winButton" type="button">Click Me!</button>
-        </div>
-    </footer>
+        <img src="img/minus.png" class="counterButton" id="tier2p1minus" width="70px" height="70 " alt="minus">
+      </div>
+      <div>
+        <h4 id="vs5"> </h4>
+        <P id="pts5" type="text" width="150">40</P>
+      </div>
+      <div>
+        <img src="img/plus.png" class="counterButton" id="tier2p1plus" width="80" height="80" alt="plus">
+      </div>
+    </div>
+    <!-- https://static3.comicvine.com/uploads/scale_super/11130/111300953/5440456-4284025-6271335549-vs.pn.png -->
+    <div>
+      <img src="img/versus.png" class="versus" id="versus" width="150">
+    </div>
 
-    <script src="js/counter.js"></script>
-  </body>
+
+    <div class="flex-container flex-container2">
+
+      <div>
+        <img src="img/minus.png" class="counterButton2" id="tier2p2minus" width="70px" height="70 " alt="minus">
+      </div>
+      <div>
+        <h4 id="vs6"></h4>
+        <P id="pts6" type="text" width="150">40</P>
+      </div>
+      <div>
+        <img src="img/plus.png" class="counterButton2" id="tier2p2plus" width="80" height="80" alt="plus">
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- todo add event listener for this input -->
+
+    <ul>Previous Battle
+      <li id="vs1"></li>
+      <li id="vs2"></li>
+      <li id="vs3"></li>
+      <li id="vs4"></li>
+    </ul>
+
+  </main>
+  <footer>
+    <div>
+      <table>
+          <param>Click here to see who won!</param>
+        <tr id="win">
+        </tr>
+      </table>
+      <button class="fight" id="winButton" type="button">Results!</button>
+    </div>
+  </footer>
+
+  <script src="js/counter.js"></script>
+</body>
+
 </html>

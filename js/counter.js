@@ -301,12 +301,6 @@ if (window.location.pathname.includes('counter2.html')){
   var listen1b = document.getElementById('winButton');
   listen1b.addEventListener('click', store1b);
 
-
-  var home2 = function(){
-    window.location.href = './index.html';
-  };
-  var homeClick2 = document.getElementById('home');
-  homeClick2.addEventListener('click', home2);
 }
 //---------
 var winner = localStorage.getItem('pwc');
@@ -315,6 +309,12 @@ if (window.location.pathname.includes('aboutus.html')){
   localStorage.getItem('pwc');
   var getWinner = document.getElementById('winner');
   getWinner.textContent = winner;
+
+  var home2 = function(){
+    window.location.href = './index.html';
+  };
+  var homeClick2 = document.getElementById('home');
+  homeClick2.addEventListener('click', home2);
 }
 
 // var kenWin = 0 ;
