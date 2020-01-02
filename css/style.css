@@ -1,9 +1,3 @@
-/* color pallette for this project from https://coolors.co/app
-#092327
-#0B5351
-#00A9A5
-#4E8098
-#90C2E7 */
 table{
 	font-size: 40px;
 	text-align: center;
@@ -154,25 +148,6 @@ main{
 	transform: translate(-50%, -50%);
 }
 
-#logo {
-	border-color: maroon;
-	size: 30px;
-	color: maroon;
-	border: 50px;
-	padding: 55px;  
-	/* float: right ;  */
-	/* margin: 15px;  */
-	/* width: 200px; 
-	height: 45px;  */
-	border-radius: 12px;
-	text-shadow: mintcream;
-	text-decoration: rgb(14, 5, 2);
-	font-size: 30px;
-	font-family: 'Ceviche One', cursive; 
-	display: inline; 
-
-} 
-
 .container{
 	border: 2px #00A9A5;
 	padding: 25px;
@@ -242,7 +217,6 @@ main{
 .nav {
   padding: 15px 25px;
   font-size: 20px;
-  text-align: center;
   cursor: pointer;
   outline: none;
   color: rgb(0, 0, 0);
@@ -381,7 +355,6 @@ main{
 }
 
 .counterButton3:active {
-  /* background-color:; */
   box-shadow: 0px clear;
   transform: translateY(5px);
 }
@@ -406,7 +379,6 @@ main{
 }
 
 .counterButton4:active {
-  /* background-color:; */
   box-shadow: 0px clear;
   transform: translateY(5px);
 }
@@ -431,7 +403,6 @@ main{
 }
 
 .counterButton5:active {
-  /* background-color:; */
   box-shadow: 0px clear;
 	transform: translateY(5px);
 }
@@ -466,7 +437,7 @@ main{
 	width: 200px;
 	margin-top: 30px;
 	font-size: 200;
-	}
+}
 
 #pts2[type=text]{
 	background-color:clear;
