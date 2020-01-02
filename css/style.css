@@ -1,17 +1,56 @@
-/* color pallette for this project
+/* color pallette for this project from https://coolors.co/app
 #092327
 #0B5351
 #00A9A5
 #4E8098
 #90C2E7 */
+table{
+	font-size: 40px;
+	text-align: center;
+	align-items: center ;
+}
+
 h1, h2 {
 	color: #092327;
 	text-align: center;
-	background-color: #00A9A5;
+	font-size: 40px;
+}
+h3{
+	background-color: clear;
+	color:  #4392F1;
+	font-size: 40px;
+	text-align: center;
+}
+
+h4{
+	background-color: clear;
+	color: purple;
+	font-size:40px;
+	text-align: center;
 }
 
 a{
 	color: #00A9A5;
+}
+
+ul{
+	color: #092327;
+	text-align: center;
+	background-color: clear;
+	font-size: 40px;
+}
+footer{
+	color: #092327;
+	text-align: center;
+	background-color: clear;
+	font-size: 40px;
+}
+
+.match2{
+	color: #092327;
+	text-align: center;
+	background-color: clear;
+	font-size: 40px;
 }
 
 .pic, .pic1, .pic2 {
@@ -19,18 +58,45 @@ a{
 	height: 350px;
   padding: 30px 80px;
 }
+
 body{
 	font-family: 'Ceviche One', cursive;
+	background-color: rgb(250, 243, 233);
+	min-width: 950px;
+	}
 
-}
 button{
-	font-family: 'Ceviche One', cursive;	
-
+	font-family: 'Ceviche One', cursive;
+	font-size: 40PX;
+	text-align: center;
 }
+.fight{
+  padding: 15px 25px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: rgb(0, 0, 0);
+  background-color: #4E8098;
+  border: none;
+  border-radius: 15px;
+	box-shadow: 0 9px 0 2px rgb(58, 49, 49);
+}
+
+.fight:hover {
+	background-color: rgb(206, 164, 187);
+}
+
+.fight:active {
+  background-color:  #4E8098;
+  box-shadow: 0 0px rgb(49, 44, 44);
+  transform: translateY(4px);
+}
+
 main{
 	font-family: 'Ceviche One', cursive;
-
 }
+
 .row,
 .row1,
 .row2 {
@@ -46,7 +112,6 @@ main{
 .text1,
 .text2 {
 	font-family: 'Ceviche One', cursive;
-
 	opacity: 0;
 	position: absolute;
 	top: 0;
@@ -63,6 +128,7 @@ main{
 	-ms-transition: all 0.4s ease-in-out 0s;
 	transition: all 0.4s ease-in-out 0s;
 }
+
 .row:hover .text,
 .row.active .text, 
 .row1:hover .text1,
@@ -77,7 +143,6 @@ main{
 .textb2{
 	text-align: center;
 	font-family: 'Ceviche One', cursive;
-
 	font-size: 20px;
 	display: inline-block;
 	position: absolute;
@@ -88,22 +153,23 @@ main{
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
+
 #logo {
-	/* border-color: maroon;
+	border-color: maroon;
 	size: 30px;
 	color: maroon;
 	border: 50px;
-	padding: 55px;  */
+	padding: 55px;  
 	/* float: right ;  */
 	/* margin: 15px;  */
 	/* width: 200px; 
 	height: 45px;  */
-	/* border-radius: 12px;
+	border-radius: 12px;
 	text-shadow: mintcream;
 	text-decoration: rgb(14, 5, 2);
 	font-size: 30px;
 	font-family: 'Ceviche One', cursive; 
-	display: inline; */
+	display: inline; 
 
 } 
 
@@ -111,16 +177,8 @@ main{
 	border: 2px #00A9A5;
 	padding: 25px;
 	background-size: auto; 
-	
 }
 
-body{
-	background-color: rgb(250, 243, 233);
-	min-width: 950px;
-}
-footer{
-	width: 500px;
-}
 
 
 /* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_animate3 */
@@ -145,10 +203,11 @@ footer{
 }
 
 .counterButton:hover,
-.counterButton2:hover {background-color: clear}
+.counterButton:hover {
+	background-color: clear
+}
 
-.counterButton:active,
-.counterButton2:active {
+.counterButton:active {
   background-color: clear;
   box-shadow: 0px clear;
   transform: translateY(5px);
@@ -170,17 +229,20 @@ footer{
 	max-height: calc(100% - 5px);
 } */
 
-/* .counterButton2:hover {background-color: clear}
+.counterButton2:hover {
+	background-color: clear
+}
 
 .counterButton2:active {
-  background-color: clear;
+  /* background-color:; */
   box-shadow: 0px clear;
   transform: translateY(5px);
-} */
+}
+
 .nav {
   padding: 15px 25px;
   font-size: 20px;
-  /* text-align: center; */
+  text-align: center;
   cursor: pointer;
   outline: none;
   color: rgb(0, 0, 0);
@@ -190,7 +252,9 @@ footer{
 	box-shadow: 0 9px 0 2px rgb(58, 49, 49);
 }
 
-.nav:hover {background-color: #CE84AD}
+.nav:hover {
+	background-color: rgb(206, 164, 187);
+}
 
 .nav:active {
   background-color:  #4E8098;
@@ -204,13 +268,16 @@ footer{
     height: 200px;
     box-shadow: 0 0 8px 8px white inset;
 }
+
  #playerImg{
 	 border-image: none;
  }
+
  .container1{
 	 display: flex;
 	 justify-content: space-evenly;
  }
+
  .versus{
 	 display: flex;
 	 justify-content: space-around;
@@ -230,36 +297,28 @@ footer{
 	  background: url('../img/fantasyBackground.jpg') no-repeat center/cover;
  }
 
- /* .flex-container {
-
-  display: flex;
-	justify-content:space-between ;
-	padding: 0px 12px 0px 12px;
-
-	background: url('../img/fantasyBackground.jpg') no-repeat center/cover;
-	width: 540px;
-  height: 400px;
-  box-shadow: 0 0 8px 8px white inset;
-} */
 /* link for image https://images.search.yahoo.com/search/images;_ylt=Awr4zV..jQteVD0AcUhXNyoA;_ylu=X3oDMTE0cmxkb3ZrBGNvbG8DZ3ExBHBvcwMxBHZ0aWQDQTA2MjBfMQRzZWMDcGl2cw--?p=fantasy+background&fr2=piv-web&fr=mcafee#id=98&iurl=https%3A%2F%2Fwallpapercave.com%2Fwp%2FaD9ULLI.jpg&action=click */
 .flex-container2 {
-	/* display: flex; */
-	/* justify-content: space-between; */
-	/* padding: 0px 12px 0px 12px; */
+	display: flex; 
+	justify-content: space-between; 
+	padding: 0px 12px 0px 12px;
 	background: url('../img/playerBackground.jpg') no-repeat center/cover;
-	/* width: 540px; */
-  /* height: 400px; */
-	/* box-shadow: 0 0 8px 8px white inset; */
+	width: 540px; 
+  height: 400px; 
+	box-shadow: 0 0 8px 8px white inset; 
 }
+
 .container{
 	display: flex;
 	flex-direction: column;
 }
+
 .innerContainer{
 	display: flex;
 	justify-content: space-evenly;
 
 }
+
 .flex-container3 {
 	display: flex;
 	justify-content: space-between;
@@ -279,6 +338,7 @@ footer{
   height: 400px;
 	box-shadow: 0 0 8px 8px white inset;
 }
+
 	.flex-container5 {
 		display: flex;
 		justify-content: space-between;
@@ -289,6 +349,7 @@ footer{
 		height: 400px;
 		box-shadow: 0 0 8px 8px white inset;
 }
+
 .flex-container6 {
 	display: flex;
 	justify-content: space-between;
@@ -299,6 +360,7 @@ footer{
 	height: 400px;
 	box-shadow: 0 0 8px 8px white inset;
 }
+
 .counterButton3 {
 	padding: 2px 2px;
   font-size: 2px;
@@ -314,13 +376,16 @@ footer{
 	max-height: calc(100% - 5px);
 }
 
-.counterButton3:hover {background-color: clear}
+.counterButton3:hover {
+	background-color: clear
+}
 
 .counterButton3:active {
   /* background-color:; */
   box-shadow: 0px clear;
   transform: translateY(5px);
 }
+
 .counterButton4{
 	padding: 2px 2px;
   font-size: 2px;
@@ -336,7 +401,9 @@ footer{
 	max-height: calc(100% - 5px);
 }
 
-.counterButton4:hover {background-color: clear}
+.counterButton4:hover {
+	background-color: clear
+}
 
 .counterButton4:active {
   /* background-color:; */
@@ -359,15 +426,15 @@ footer{
 	max-height: calc(100% - 5px);
 }
 
-.counterButton5:hover {background-color: clear}
+.counterButton5:hover {
+	background-color: clear
+}
 
 .counterButton5:active {
   /* background-color:; */
   box-shadow: 0px clear;
 	transform: translateY(5px);
 }
-
-
 
 .counterButton6{
 	padding: 2px 2px;
@@ -384,66 +451,74 @@ footer{
 	max-height: calc(100% - 5px);
 }
 
-.counterButton6:hover {background-color: clear}
+.counterButton6:hover {
+	background-color: clear
+}
 
 .counterButton6:active {
-  /* background-color:; */
   box-shadow: 0px clear;
 	transform: translateY(5px);
 }
+
 #pts1[type=text]{
-	/* background-color:clear; */
 	font-family: 'Ceviche One', cursive;
 	color: rgba(78,128,152,0.80);
-	/* position: relative; */
-	/* opacity: %; */
-
 	width: 200px;
 	margin-top: 30px;
 	font-size: 200;
-	
-	/* text-size-adjust: ; */
-}
+	}
 
 #pts2[type=text]{
 	background-color:clear;
 	font-family: 'Ceviche One', cursive;
 	color: rgba(78,128,152,0.80);
-
-
 	width: 200px;
 	margin-top: 30px;
 	font-size: 200;
 	color: gradient;
-
 }
+
 #pts3[type=text]{
 	background-color:clear;
 	font-family: 'Ceviche One', cursive;
 	color: rgba(78,128,152,0.80);
-
-
 	width: 200px;
 	margin-top: 30px;
 	font-size: 200;
 	color: gradient;
-	/* text-size-adjust: ; */
-
 }
+
 #pts4[type=text]{
 	background-color:clear;
 	font-family: 'Ceviche One', cursive;
 	color: rgba(78,128,152,0.80);
 	border-radius: 20px;
-
 	width: 200px;
 	margin-top: 30px;
 	font-size: 200;
 	color: gradient;
-	/* text-size-adjust: ; */
+	}
 
+#pts5[type=text]{
+	background-color:clear;
+	font-family: 'Ceviche One', cursive;
+	color: rgba(78,128,152,0.80);
+	border-radius: 20px;
+	width: 200px;
+	margin-top: 30px;
+	font-size: 200;
+	color: gradient;
+}
 
-
+#pts6[type=text]{
+	background-color:clear;
+	font-family: 'Ceviche One', cursive;
+	color: rgba(78,128,152,0.80);
+	border-radius: 20px;
+	width: 200px;
+	margin-top: 30px;
+	font-size: 200;
+	color: gradient;
 }
 /* for the trophy */
 .contain {
@@ -452,6 +527,7 @@ footer{
 	margin-right: 200px;
 	animation: rotate 5s linear infinite;
 }
+
 @keyframes rotate {
   65% {
     transform: rotateY(-160deg);
