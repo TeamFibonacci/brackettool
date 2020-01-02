@@ -2,6 +2,7 @@ table{
 	font-size: 40px;
 	text-align: center;
 	align-items: center ;
+	margin: 50px 0px 0px 600px;
 }
 
 h1, h2 {
@@ -64,7 +65,7 @@ button{
 	font-size: 40PX;
 	text-align: center;
 }
-.fight{
+.fight, .fight1, .fight2{
   padding: 15px 25px;
   font-size: 20px;
   text-align: center;
@@ -75,13 +76,22 @@ button{
   border: none;
   border-radius: 15px;
 	box-shadow: 0 9px 0 2px rgb(58, 49, 49);
+	margin: 30px 0px 0px 650px ;
 }
 
-.fight:hover {
+.fight1, .fight2{
+	margin: 30px
+}
+
+.fight:hover,
+.fight1:hover,
+.fight2:hover {
 	background-color: rgb(206, 164, 187);
 }
 
-.fight:active {
+.fight:active, 
+.fight1:active,
+.fight2:active{
   background-color:  #4E8098;
   box-shadow: 0 0px rgb(49, 44, 44);
   transform: translateY(4px);
@@ -224,6 +234,8 @@ main{
   border: none;
   border-radius: 15px;
 	box-shadow: 0 9px 0 2px rgb(58, 49, 49);
+	float: right;
+	margin: -50px 0px 0px 50px;
 }
 
 .nav:hover {
@@ -493,9 +505,9 @@ main{
 }
 /* for the trophy */
 .contain {
-  width: 3px;
-  float: right;
-	margin-right: 200px;
+  width: 1px;
+  float: center;
+	margin-left: 700px;
 	animation: rotate 5s linear infinite;
 }
 

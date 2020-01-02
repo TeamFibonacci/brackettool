@@ -325,3 +325,9 @@ if (window.location.pathname.includes('aboutus.html')){
 //   kenStore ++;
 // }
 // var kenString = kenStore.toString();
+
+
+
+
+
+
