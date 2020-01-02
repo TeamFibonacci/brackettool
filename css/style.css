@@ -1,9 +1,4 @@
-/* color pallette for this project
-#092327
-#0B5351
-#00A9A5
-#4E8098
-#90C2E7 */
+
 h1, h2 {
 	color: #092327;
 	text-align: center;
@@ -21,8 +16,8 @@ a{
 }
 body{
 	font-family: 'Ceviche One', cursive;
-
 }
+
 button{
 	font-family: 'Ceviche One', cursive;	
 
@@ -88,24 +83,7 @@ main{
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
-#logo {
-	/* border-color: maroon;
-	size: 30px;
-	color: maroon;
-	border: 50px;
-	padding: 55px;  */
-	/* float: right ;  */
-	/* margin: 15px;  */
-	/* width: 200px; 
-	height: 45px;  */
-	/* border-radius: 12px;
-	text-shadow: mintcream;
-	text-decoration: rgb(14, 5, 2);
-	font-size: 30px;
-	font-family: 'Ceviche One', cursive; 
-	display: inline; */
 
-} 
 
 .container{
 	border: 2px #00A9A5;
@@ -173,7 +151,6 @@ footer{
 .nav {
   padding: 15px 25px;
   font-size: 20px;
-  /* text-align: center; */
   cursor: pointer;
   outline: none;
   color: rgb(0, 0, 0);
@@ -296,7 +273,6 @@ footer{
 .counterButton3:hover {background-color: clear}
 
 .counterButton3:active {
-  /* background-color:; */
   box-shadow: 0px clear;
   transform: translateY(5px);
 }
@@ -318,7 +294,6 @@ footer{
 .counterButton4:hover {background-color: clear}
 
 .counterButton4:active {
-  /* background-color:; */
   box-shadow: 0px clear;
   transform: translateY(5px);
 }
@@ -341,13 +316,9 @@ footer{
 .counterButton5:hover {background-color: clear}
 
 .counterButton5:active {
-  /* background-color:; */
   box-shadow: 0px clear;
 	transform: translateY(5px);
 }
-
-
-
 .counterButton6{
 	padding: 2px 2px;
   font-size: 2px;
@@ -366,22 +337,15 @@ footer{
 .counterButton6:hover {background-color: clear}
 
 .counterButton6:active {
-  /* background-color:; */
   box-shadow: 0px clear;
 	transform: translateY(5px);
 }
 #pts1[type=text]{
-	/* background-color:clear; */
 	font-family: 'Ceviche One', cursive;
 	color: rgba(78,128,152,0.80);
-	/* position: relative; */
-	/* opacity: %; */
-
 	width: 200px;
 	margin-top: 30px;
 	font-size: 200;
-	
-	/* text-size-adjust: ; */
 }
 
 #pts2[type=text]{
@@ -406,8 +370,6 @@ footer{
 	margin-top: 30px;
 	font-size: 200;
 	color: gradient;
-	/* text-size-adjust: ; */
-
 }
 #pts4[type=text]{
 	background-color:clear;
@@ -419,10 +381,6 @@ footer{
 	margin-top: 30px;
 	font-size: 200;
 	color: gradient;
-	/* text-size-adjust: ; */
-
-
-
 }
 /* for the trophy */
 .contain {
