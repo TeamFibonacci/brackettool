@@ -433,6 +433,7 @@ main{
   box-shadow: 0px clear;
 	transform: translateY(5px);
 }
+/* Lillian Gales helped hash out the images as background for numbers */
 /*link for how i did the gradient text
  https://cssgradient.io/blog/css-gradient-text/ */
  /* https://media.tenor.com/images/ae5eed3c4026dd9766f4ee602c58deb3/tenor.gif */
@@ -538,6 +539,7 @@ main{
   float: center;
 	margin-left: 700px;
 	animation: rotate 5s linear infinite;
+	rotate: center;
 }
 
 @keyframes rotate {
