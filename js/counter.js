@@ -316,18 +316,3 @@ if (window.location.pathname.includes('aboutus.html')){
   var homeClick2 = document.getElementById('home');
   homeClick2.addEventListener('click', home2);
 }
-
-// var kenWin = 0 ;
-// localStorage.setItem('kenwin+', kenWin);
-// var kenStore = localStorage.getItem('kenwin');
-
-// if(win().includes('ken')){
-//   kenStore ++;
-// }
-// var kenString = kenStore.toString();
-
-
-
-
-
-
