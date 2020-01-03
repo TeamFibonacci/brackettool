@@ -97,11 +97,6 @@ localStorage.setItem('setP2', two.name);
 localStorage.setItem('setP3', three.name);
 localStorage.setItem('setP4', four.name);
 
-// var p1Summary = localStorage.getItem('p1life');
-
-// var kenPlus = localStorage.getItem('kenwin+');
-// var parsedKenPlus = JSON.parse(kenPlus);
-
 // about chart-------------------------------------------------------
 
 // function playersName() {
