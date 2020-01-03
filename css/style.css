@@ -5,6 +5,11 @@ table{
 	margin: 50px 0px 0px 600px;
 }
 
+#notmatch1{
+	text-align: center;
+	font-size: 30px;
+}
+
 h1, h2 {
 	color: #092327;
 	text-align: center;
