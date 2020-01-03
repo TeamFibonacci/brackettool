@@ -5,6 +5,14 @@ table{
 	margin: 50px 0px 0px 600px;
 }
 
+#match1 {
+	color: #092327;
+	text-align: center;
+	background-color: clear;
+	font-size: 40px;
+	margin-top: 20px;
+}
+
 h1, h2 {
 	color: #092327;
 	text-align: center;
@@ -195,22 +203,6 @@ main{
   box-shadow: 0px clear;
   transform: translateY(5px);
 }
-
-/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_animate3 */
-/* .counterButton2{
-	padding: 2px 2px;
-  font-size: 2px;
-  text-align: bottom;
-	cursor: pointer;
-	margin-top: 300px;
-  outline: none;
-  color: #fff;
-  background-color: clear;
-  border: none;
-  border-radius: 1px;
-	box-shadow: 0px black;
-	max-height: calc(100% - 5px);
-} */
 
 .counterButton2:hover {
 	background-color: clear
