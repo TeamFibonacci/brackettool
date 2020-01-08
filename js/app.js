@@ -2,29 +2,23 @@
 
 //buttons---------------------------------------------------
 //button to match 1
-var counter1 = function(){
-  window.location.href = 'counter.html';
-};
-var match1Click = document.getElementById('match1');
-match1Click.addEventListener('click', counter1);
+// This is a lot of effort to replicate what an `a` tag can already do! In general, better to use the tag that makes link happen than to re-build that functionality yourself.
+// var counter1 = function(){
+//   window.location.href = 'counter.html';
+// };
+// var match1Click = document.getElementById('match1');
+// match1Click.addEventListener('click', counter1);
 
-// var graphP = document.getElementById('myChart');
-// graphP.addEventListener(renderChart);
+// zombie
 
 //button to win screen
-var youWin = function(){
-  window.location.href = 'aboutus.html';
-};
-var aboutClick = document.getElementById('aboutUs');
-aboutClick.addEventListener('click', youWin);
-
-//button to scroll to chart
-// var graph = function(){
-//   window.location.href = '#myChart';
+// var youWin = function(){
+//   window.location.href = 'aboutus.html';
 // };
-// var statsClick = document.getElementById('stats');
-// statsClick.addEventListener('click', graph);
+// var aboutClick = document.getElementById('aboutUs');
+// aboutClick.addEventListener('click', youWin);
 
+// zombie
 
 // Add var allPlayer = []  help to push this
 var allPlayer = [];
@@ -38,6 +32,7 @@ function OrganicPlayer(name, points){
 }
 
 //get player names
+// Instead of using prompts, it would be a nicer user experience to have inputs on your page and then a "submit" button.
 var getPlayer1Name = prompt('Player 1, what is your name?');
 function player1Name(){
   getPlayer1Name;
@@ -99,50 +94,4 @@ localStorage.setItem('setP4', four.name);
 
 // about chart-------------------------------------------------------
 
-// function playersName() {
-//   var answer = [];
-//   for(var i = 0; i < allPlayer.length; i++) {
-//     answer[i] = allPlayer[i].name;
-//   }
-//   return answer;
-// }
-
-// function renderChart(){
-//   var ctx = document.getElementById('myChart').getContext('2d');
-//   // eslint-disable-next-line no-undef
-//   new Chart(ctx, {
-//     type: 'bar',
-//     data: {
-//       labels: playersName(),
-//       datasets: [{
-//         label: '# of points',
-//         data: [2, 6, 5, 9],
-//         backgroundColor: [
-//           'rgba(255, 99, 132, 0.2)',
-//           'rgba(54, 162, 235, 0.2)',
-//           'rgba(255, 206, 86, 0.2)',
-//           'rgba(75, 192, 192, 0.2)'
-//         ],
-//         borderColor: [
-//           'rgba(255, 99, 132, 1)',
-//           'rgba(54, 162, 235, 1)',
-//           'rgba(255, 206, 86, 1)',
-//           'rgba(75, 192, 192, 1)'
-//         ],
-//         borderWidth: 1
-//       }]
-//     },
-//     options: {
-//       scales: {
-//         yAxes: [{
-//           ticks: {
-//             beginAtZero: true
-//           }
-//         }]
-//       }
-//     }
-//   });
-// }
-// renderChart();
-
-//--counter Js
+// oh noooo zombie code! Try to remove things like this in future projects before they're finished!

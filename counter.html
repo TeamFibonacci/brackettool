@@ -1,144 +1,126 @@
 <html lang="en">
 
+<!-- indentation is definitely weird in this file!  I used VS Code's Reindent Lines tool and it changed most lines of the file. -->
 <head>
-
   <link href="https://fonts.googleapis.com/css?family=Ceviche+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" type="text/css" href="./css/style.css">
-  
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <!-- please make sure you have meaningful titles! -->
+  <title>BATTLE</title>
 </head>
 
 <body>
+  <!-- This sort of style should be in a css file, not directly applied to the element. -->
   <header style="background-image: linear-gradient(to right,#90C2E7,#4E8098,#00A9A5,#0B5351, #092327);">
     <div class="container">
       <div id="header">
         <element id="grad">
-          <img src="img/logo.gif" alt="logo"> 
+          <img src="img/logo.gif" alt="logo">
           <div>
-            <button id="aboutUs" type="button" class="nav">About Us</button>
-            <button id="home" type="button" class="nav">Home</button>
+            <a href="aboutus.html" id="aboutUs" type="button" class="nav">About Us</a>
+            <a href="index.html" id="home" type="button" class="nav">Home</a>
           </div>
-      </div>
-    </div>
-
-  </header>
-
-  <!-- https://i.pinimg.com/originals/a7/af/2c/a7af2c849f33b2b7aa1d381da948fa9b.jpg -->
-
-  <div class="container" >    
-
-    
-    <div class="innerContainer">
-    <div class="flex-container3">
-      <!-- <p id="vs1">Player One: </p> -->
-      <div>
-        <img src="img/minus.png" class="counterButton3" id="tier1p1minus" width="70px" height="70 " alt="minus">
-      </div>
-      <div>
-        <h3 id="vs1">  </h3>
-      <P id="pts1" type="text" width="150" id="vs1"> 40 </P>
-    </div>
-      <div>
-
-        <img src="img/plus.png" class="counterButton3" id="tier1p1plus" width="80" height="80" alt="plus">
-      </div>
-    </div>
-    <!-- https://static3.comicvine.com/uploads/scale_super/11130/111300953/5440456-4284025-6271335549-vs.pn.png -->
-    <div>
-      <img src="img/versus.png" class="versus" id="versus" width="200" height="150" >
-    </div>
-    <!-- http://getwallpapers.com/wallpaper/full/2/4/3/98164.jpg -->
-    <div class="flex-container4">
-      <!-- <p id="vs2">Player Two: </p> -->
-      <div>
-        <img src="img/minus.png" class="counterButton4" id="tier1p2minus" width="70px" height="70 " alt="minus">
-      </div>
-      <div>
-      <h3 id="vs2">  </h3>
-      <P id="pts2" type="text" width="150" >40</P>
-    </div>
-      <div>
-        <img src="img/plus.png" class="counterButton4" id="tier1p2plus" width="80" height="80" alt="plus">
-      </div>
-    </div>
-  </div>
-<div class="innerContainer">
-    <div class="flex-container5">
-      <!-- <p id="vs1">Player One: </p> -->
-      <div>
-        <img src="img/minus.png" class="counterButton5" id="tier1p3minus" width="70px" height="70 " alt="minus">
-      </div>
-      <div>
-      <h3 id="vs3">  </h3>
-      <P id="pts3" type="text" width="150" >40</P>
-      </div>
-      <div>
-        <img src="img/plus.png" class="counterButton5" id="tier1p3plus" width="80" height="80" alt="plus">
-      </div>
-    </div>
-    <!-- https://static3.comicvine.com/uploads/scale_super/11130/111300953/5440456-4284025-6271335549-vs.pn.png -->
-    <div>
-      <img src="img/versus.png" class="versus" id="versus" width="200" height="150">
-    </div>
-    <div class="flex-container6">
-      <!-- <p id="vs1">Player One: </p> -->
-
-      <div>
-
-        <img src="img/minus.png" class="counterButton6" id="tier1p4minus" width="70px" height="70 " alt="minus">
-      </div>
-      <div>
-        <h3 id="vs4">  </h3>
-      <P id="pts4" type="text" width="150" >40</P>
-      </div>
-      <div>
-        <img src="img/plus.png" class="counterButton6" id="tier1p4plus" width="80" height="80" alt="plus">
-      </div>
-    </div>
-    <!-- https://static3.comicvine.com/uploads/scale_super/11130/111300953/5440456-4284025-6271335549-vs.pn.png -->
-    <div>
-      <!-- <img src="img/versus.png" class="versus" id="versus" width="150" > -->
-    </div>
-  </div>
-  </div>
-
-  <main>
-    <!-- <div class="flex-container">
-        <div>
-          <img src="img/minus.png" id="minus" width="70px" height="70 "alt="minus">
         </div>
-        <div>
-          <img src="img/plus.png" id="plus" width="80" height="80"   alt="plus">
-        </div>
-      </div> -->
-    
-      <!-- "vs1 - " -->
+      </div>
       
-
+    </header>
+    
+    <!-- https://i.pinimg.com/originals/a7/af/2c/a7af2c849f33b2b7aa1d381da948fa9b.jpg -->
+    
+    <div class="container" >    
+      
+      
+      <div class="innerContainer">
+        <div class="flex-container3">
+          <!-- <p id="vs1">Player One: </p> -->
+          <div>
+            <img src="img/minus.png" class="counterButton3" id="tier1p1minus" width="70px" height="70 " alt="minus">
+          </div>
+          <div>
+            <h3 id="vs1">  </h3>
+            <P id="pts1" type="text" width="150" id="vs1"> 40 </P>
+          </div>
+          <div>
+            
+            <img src="img/plus.png" class="counterButton3" id="tier1p1plus" width="80" height="80" alt="plus">
+          </div>
+        </div>
+        <!-- https://static3.comicvine.com/uploads/scale_super/11130/111300953/5440456-4284025-6271335549-vs.pn.png -->
+        <div>
+          <img src="img/versus.png" class="versus" id="versus" width="200" height="150" >
+        </div>
+        <!-- http://getwallpapers.com/wallpaper/full/2/4/3/98164.jpg -->
+        <div class="flex-container4">
+          <!-- <p id="vs2">Player Two: </p> -->
+          <div>
+            <img src="img/minus.png" class="counterButton4" id="tier1p2minus" width="70px" height="70 " alt="minus">
+          </div>
+          <div>
+            <h3 id="vs2">  </h3>
+            <P id="pts2" type="text" width="150" >40</P>
+          </div>
+          <div>
+            <img src="img/plus.png" class="counterButton4" id="tier1p2plus" width="80" height="80" alt="plus">
+          </div>
+        </div>
+      </div>
+      <div class="innerContainer">
+        <div class="flex-container5">
+          <div>
+            <img src="img/minus.png" class="counterButton5" id="tier1p3minus" width="70px" height="70 " alt="minus">
+          </div>
+          <div>
+            <h3 id="vs3">  </h3>
+            <P id="pts3" type="text" width="150" >40</P>
+          </div>
+          <div>
+            <img src="img/plus.png" class="counterButton5" id="tier1p3plus" width="80" height="80" alt="plus">
+          </div>
+        </div>
+        <!-- https://static3.comicvine.com/uploads/scale_super/11130/111300953/5440456-4284025-6271335549-vs.pn.png -->
+        <div>
+          <img src="img/versus.png" class="versus" id="versus" width="200" height="150">
+        </div>
+        <div class="flex-container6">
+          <div>
+            <img src="img/minus.png" class="counterButton6" id="tier1p4minus" width="70px" height="70 " alt="minus">
+          </div>
+          <div>
+            <h3 id="vs4">  </h3>
+            <P id="pts4" type="text" width="150" >40</P>
+          </div>
+          <div>
+            <img src="img/plus.png" class="counterButton6" id="tier1p4plus" width="80" height="80" alt="plus">
+          </div>
+        </div>
+        <!-- https://static3.comicvine.com/uploads/scale_super/11130/111300953/5440456-4284025-6271335549-vs.pn.png -->
+        <!-- Compared to the other .innerContainer, you have this one extra div here. It means that on large screens, the space-evenly is trying to give this div space as well, which means that your top set of counters and bottom set of counters have different spacing. Getting rid of the div solves the issue! And this is your Cautionary Tale of the Day about leftover/dead/zombie code! -->
+      </div>
+    </div>
+    
+    <main>
+      <!-- zombie code -->
       <ul>Next Battle
         <li id="vs5"></li>
         <li id="vs6"></li>
       </ul>
-
     </main>
     <footer>
-
+      
       <table>
-          <p class="match2">Match 2</p>
+        <p class="match2">Match 2</p>
         <tr id="playersWin1">
         </tr>
         <tr id="playersWin2">
         </tr>
-    </table>
-    <button class="fight1" id="match2" type="button">FIGHT!</button>
+      </table>
+      <button class="fight1" id="match2" type="button">FIGHT!</button>
     </div>
-
-    </footer>
-    <script src="js/counter.js"></script>
-  </body>
+    
+  </footer>
+  <script src="js/counter.js"></script>
+</body>
 </html>
