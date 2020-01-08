@@ -33,20 +33,8 @@ a{
 	color: #00A9A5;
 }
 
-ul{
-	color: #092327;
-	text-align: center;
-	background-color: clear;
-	font-size: 40px;
-}
-footer{
-	color: #092327;
-	text-align: center;
-	background-color: clear;
-	font-size: 40px;
-}
-
-.match2{
+/* This could all be one declaration! */
+ul, footer, .match2 {
 	color: #092327;
 	text-align: center;
 	background-color: clear;
@@ -190,7 +178,6 @@ main{
 	max-height: calc(100% - 5px);
 }
 
-.counterButton:hover,
 .counterButton:hover {
 	background-color: clear
 }
@@ -223,7 +210,7 @@ main{
   border-radius: 15px;
 	box-shadow: 0 9px 0 2px rgb(58, 49, 49);
 	float: right;
-	margin: -50px 0px 0px 50px;
+	margin: 10px;
 }
 
 .nav:hover {
@@ -245,31 +232,31 @@ main{
 
 #playerImg{
 	border-image: none;
- }
+}
 
- .container1{
-	 display: flex;
-	 justify-content: space-evenly;
- }
+.container1{
+	display: flex;
+	justify-content: space-evenly;
+}
 
- .versus{
-	 display: flex;
-	 justify-content: space-around;
-	 margin-top:80% ;
- }
+.versus{
+	display: flex;
+	justify-content: space-around;
+	margin-top:80% ;
+}
 
- .flex-container {
-	  display: flex;
-		justify-content:space-between ;
-		padding: 0px 12px 0px 12px;
-		width: 540px;
-  	height: 400px;
-		box-shadow: 0 0 8px 8px white inset;
- } 
+.flex-container {
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 12px 0px 12px;
+	width: 540px;
+	height: 400px;
+	box-shadow: 0 0 8px 8px white inset;
+} 
 
- .flex-container1 {
-	  background: url('../img/fantasyBackground.jpg') no-repeat center/cover;
- }
+.flex-container1 {
+	background: url('../img/fantasyBackground.jpg') no-repeat center/cover;
+}
 
 /* link for image https://images.search.yahoo.com/search/images;_ylt=Awr4zV..jQteVD0AcUhXNyoA;_ylu=X3oDMTE0cmxkb3ZrBGNvbG8DZ3ExBHBvcwMxBHZ0aWQDQTA2MjBfMQRzZWMDcGl2cw--?p=fantasy+background&fr2=piv-web&fr=mcafee#id=98&iurl=https%3A%2F%2Fwallpapercave.com%2Fwp%2FaD9ULLI.jpg&action=click */
 .flex-container2 {
@@ -293,143 +280,43 @@ main{
 
 }
 
-.flex-container3 {
+/* so much opportunity to make this CSS more DRY */
+.flex-container3, .flex-container4, .flex-container5, .flex-container6 {
 	display: flex;
 	justify-content: space-between;
 	padding: 0px 12px 0px 12px;
-	background: url('../img/japan.jpg') no-repeat center/cover;
 	width: 540px;
   height: 400px;
 	box-shadow: 0 0 8px 8px white inset;
+}
+
+.flex-container3 {
+	background: url('../img/japan.jpg') no-repeat center/cover;
 }
 
 .flex-container4 {
-	display: flex;
-	justify-content: space-between;
-	padding: 0px 12px 0px 12px;
 	background: url('../img/broken.jpg') no-repeat center/cover;
-	width: 540px;
-  height: 400px;
-	box-shadow: 0 0 8px 8px white inset;
 }
 
-	.flex-container5 {
-		display: flex;
-		justify-content: space-between;
-		padding: 0px 12px 0px 12px;
-		/* https://i.pinimg.com/originals/e7/15/61/e71561e889c62344122520c6337b68f6.jpg */
-		background: url('../img/player3.jpg') no-repeat center/cover;
-		width: 540px;
-		height: 400px;
-		box-shadow: 0 0 8px 8px white inset;
+.flex-container5 {
+	/* https://i.pinimg.com/originals/e7/15/61/e71561e889c62344122520c6337b68f6.jpg */
+	background: url('../img/player3.jpg') no-repeat center/cover;
 }
 
 .flex-container6 {
-	display: flex;
-	justify-content: space-between;
-	padding: 0px 12px 0px 12px;
 	/* https://s-media-cache-ak0.pinimg.com/736x/f7/7e/cc/f77eccdd08fe02de714221f17ea2fe87--apocalypse-art-fantasy-landscape.jpg */
 	background: url('../img/destroyer.jpg') no-repeat center/cover;
-	width: 540px;
-	height: 400px;
-	box-shadow: 0 0 8px 8px white inset;
 }
 
-.counterButton3 {
-	padding: 2px 2px;
-  font-size: 2px;
-	text-align: center;
-	margin-top: 300px;
-  cursor: pointer;
-  outline: none;
-  color: #fff;
-  background-color: clear;
-  border: none;
-  border-radius: 1px;
-	box-shadow: 0px black;
-	max-height: calc(100% - 5px);
-}
-
-.counterButton3:hover {
+.counterButton3:hover, .counterButton4:hover, .counterButton5:hover, .counterButton6:hover {
 	background-color: clear
 }
 
-.counterButton3:active {
+.counterButton3:active, .counterButton4:active, .counterButton5:active, .counterButton6:active {
   box-shadow: 0px clear;
   transform: translateY(5px);
 }
 
-.counterButton4{
-	padding: 2px 2px;
-  font-size: 2px;
-	text-align: center;
-	margin-top: 300px;
-  cursor: pointer;
-  outline: none;
-  color: #fff;
-  background-color: clear;
-  border: none;
-  border-radius: 1px;
-	box-shadow: 0px black;
-	max-height: calc(100% - 5px);
-}
-
-.counterButton4:hover {
-	background-color: clear
-}
-
-.counterButton4:active {
-  box-shadow: 0px clear;
-  transform: translateY(5px);
-}
-
-.counterButton5{
-	padding: 2px 2px;
-  font-size: 2px;
-	text-align: center;
-	margin-top: 300px;
-  cursor: pointer;
-  outline: none;
-  color: #fff;
-  background-color: clear;
-  border: none;
-  border-radius: 1px;
-	box-shadow: 0px black;
-	max-height: calc(100% - 5px);
-}
-
-.counterButton5:hover {
-	background-color: clear
-}
-
-.counterButton5:active {
-  box-shadow: 0px clear;
-	transform: translateY(5px);
-}
-
-.counterButton6{
-	padding: 2px 2px;
-  font-size: 2px;
-	text-align: center;
-	margin-top: 300px;
-  cursor: pointer;
-  outline: none;
-  color: #fff;
-  background-color: clear;
-  border: none;
-  border-radius: 1px;
-	box-shadow: 0px black;
-	max-height: calc(100% - 5px);
-}
-
-.counterButton6:hover {
-	background-color: clear
-}
-
-.counterButton6:active {
-  box-shadow: 0px clear;
-	transform: translateY(5px);
-}
 /* Lillian Gales helped hash out the images as background for numbers */
 /*link for how i did the gradient text
  https://cssgradient.io/blog/css-gradient-text/ */

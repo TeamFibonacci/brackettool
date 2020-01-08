@@ -1,40 +1,5 @@
 'use strict';
-
-
-if (window.location.pathname.includes('index.html') || window.location.pathname.includes('counter.html') || window.location.pathname.includes('counter2.html')){
-//---buttons-------------------------------------------
-//home button-----------
-  var home = function(){
-    window.location.href = './index.html';
-  };
-  var homeClick = document.getElementById('home');
-  homeClick.addEventListener('click', home);
-  //aboutus button----------
-  var youWin = function(){
-    window.location.href = 'aboutus.html';
-  };
-  var aboutClick = document.getElementById('aboutUs');
-  aboutClick.addEventListener('click', youWin);
-
-  var winScreen = function(){
-    var winClick = document.getElementById('winButton');
-    winClick.addEventListener('click', youWin);
-  };
-  if (window.location.pathname.includes('counter2.html')){
-    winScreen();
-  }
-
-  var counter2 = function(){
-    window.location.href = 'counter2.html';
-  };
-  var counter2Screen = function(){
-    var match2Click = document.getElementById('match2');
-    match2Click.addEventListener('click', counter2);
-  };
-  if (window.location.pathname.includes('counter.html')){
-    counter2Screen();
-  }
-}
+// Again, you can get rid of all of this logic to replicate what a tags can do.
 
 //get player names
 var getPlayer1 = localStorage.getItem('setP1');
@@ -69,10 +34,11 @@ var player2b = localStorage.getItem('pwb');
 
 function match2Players(){
   var versus3 = document.getElementById('vs5');
-  var addText3 = document.createTextNode(`${player1b} `);
+  // Since this is already a string, it doesn't need to be in a template literal.
+  var addText3 = document.createTextNode(player1b);
   versus3.appendChild(addText3);
   var versus4 = document.getElementById('vs6');
-  var addText4 = document.createTextNode(`${player2b} `);
+  var addText4 = document.createTextNode(player2b);
   versus4.appendChild(addText4);
 }
 if (window.location.pathname.includes('index.html') || window.location.pathname.includes('counter2.html')){
